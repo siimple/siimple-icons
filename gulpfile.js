@@ -8,7 +8,7 @@ var svgmin = require('gulp-svgmin');
 gulp.task('build', function()
 {
   //Source files
-  var src = [ 'action/*.svg' ];
+  var src = [ 'action/*.svg', 'alert/*.svg', 'navigation/*.svg' ];
 
   //Get the svg files
   return gulp.src(src)
