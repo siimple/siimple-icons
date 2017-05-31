@@ -6,6 +6,7 @@
   "license": "MIT",
   "devDependencies":
   {
+    "rmr": "0.0.4",
     "gulp": "3.9.1",
     "gulp-svgstore": "6.1.0",
     "gulp-svgmin": "1.2.3"
