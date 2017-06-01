@@ -7,14 +7,14 @@ var svgmin = require('gulp-svgmin');
 var rename = require("gulp-rename");
 
 //Clean the dist folder
-gulp.task('clean', function()
+gulp.task('icons-clean', function()
 {
   //Clean the dist folder
   return rmr.sync('./dist');
 });
 
 //Build the svg sprite task
-gulp.task('build', function()
+gulp.task('icons-build', function()
 {
   //Source files
   var src = [ 'action/*.svg', 'alert/*.svg', 'navigation/*.svg' ];
@@ -58,5 +58,8 @@ gulp.task('build', function()
   .pipe(gulp.dest('./dist'));
 });
 
+//Build the icons task
+gulp.task('icons', [ 'icons-clean', 'icons-build' ]);
+
 //Default task
-gulp.task('default', [ 'clean', 'build' ]);
+gulp.task('default', [ 'icons' ]);
