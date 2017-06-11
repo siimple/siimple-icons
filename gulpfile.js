@@ -22,12 +22,6 @@ gulp.task('build-sprite', function()
   //Minimize each file
   .pipe(svgmin(function(file)
   {
-    //Get the file parent folder and name
-    //var name = file.path.split(path.sep).slice(-2).join('-');
-
-    //Remove the file extension
-    //var prefix = path.basename(name, path.extname(name));
-
     //Get the icon prefix
     var prefix = path.basename(file.relative, path.extname(file.relative));
 
