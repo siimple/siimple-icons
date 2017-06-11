@@ -5,7 +5,9 @@ A suite of SVG icons for web, desktop and mobile projects.
 
 ## Usage
 
-The svg sprite is placed in `dist`. Each icon is saved with an ID using pattern `{{ icon-group }}-{{ icon-name }}`, where `icon-group` is the group where this icon is placed, and `icon-name` is the icon file name (without the `.svg` extension). For example, the icon `navigation/arrow-up.svg` is saved in the sprite with the ID `navigation-arrow-up`.  
+### Using the SVG sprite
+
+The svg sprite is placed in `dist` with the name `siimple-icons.svg`. Each icon is saved with an ID, extracted from the icon file name (without the `.svg` extension). For example, the icon `src/arrow-up.svg` is saved in the sprite with the ID `arrow-up`.  
 
 You can use all the icons in the sprite adding the following HTML code to your web page:
 
