@@ -1,6 +1,6 @@
 # siimple-icons
 
-A suite of SVG icons for web, desktop and mobile projects.
+> siimple-icons is a suite of scalable icons for web, desktop and mobile projects.
 
 
 ## Usage
