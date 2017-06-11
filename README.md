@@ -47,7 +47,7 @@ npm install -g gulp
 Now you can generate the sprite with all the images running the following command:
 
 ```
-gulp icons
+gulp sprite
 ```
 
 
