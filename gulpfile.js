@@ -14,7 +14,7 @@ gulp.task('clean', function()
 });
 
 //Build the svg sprite task
-gulp.task('build-sprite', function()
+gulp.task('sprite', function()
 {
   //Get the svg files
   gulp.src('./src/*.svg', { base: './src' })
@@ -42,8 +42,5 @@ gulp.task('build-sprite', function()
   .pipe(gulp.dest('./dist'));
 });
 
-//Build the sprite icons task
-gulp.task('sprite', [ 'clean', 'build-sprite' ]);
-
 //Default task
-gulp.task('default', [ 'icons' ]);
+gulp.task('default', [ 'clean', 'sprite' ]);
