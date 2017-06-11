@@ -7,30 +7,17 @@ var svgmin = require('gulp-svgmin');
 var rename = require("gulp-rename");
 
 //Clean the dist folder
-gulp.task('icons-clean', function()
+gulp.task('clean', function()
 {
   //Clean the dist folder
   return rmr.sync('./dist');
 });
 
 //Build the svg sprite task
-gulp.task('icons-build', function()
+gulp.task('build-sprite', function()
 {
-  //Source files
-  var src = [ 'action/*.svg', 'alert/*.svg', 'navigation/*.svg' ];
-
   //Get the svg files
-  return gulp.src(src, { base: './' })
-
-  //Rename the file base name
-  .pipe(rename(function(file)
-  {
-    //Remove the file extension and save as the file basename
-    file.basename = file.dirname + '-' + file.basename;
-
-    //Display in console
-    console.log('Processing ' + file.basename);
-  }))
+  gulp.src('./src/*.svg', { base: './src' })
 
   //Minimize each file
   .pipe(svgmin(function(file)
@@ -42,10 +29,13 @@ gulp.task('icons-build', function()
     //var prefix = path.basename(name, path.extname(name));
 
     //Get the icon prefix
-    //var prefix = path.basename(file.relative, path.extname(file.relative));
+    var prefix = path.basename(file.relative, path.extname(file.relative));
+
+    //Display in console
+    console.log('Processing ' + prefix);
 
     //Return the prefix plugin
-    return { plugins: [ { cleanupIDs: { prefix: file.relative + '-',  minify: true } } ] };
+    return { plugins: [ { cleanupIDs: { prefix: prefix + '-',  minify: true } } ] };
   }))
 
   //Build the sprite
@@ -58,8 +48,8 @@ gulp.task('icons-build', function()
   .pipe(gulp.dest('./dist'));
 });
 
-//Build the icons task
-gulp.task('icons', [ 'icons-clean', 'icons-build' ]);
+//Build the sprite icons task
+gulp.task('sprite', [ 'clean', 'build-sprite' ]);
 
 //Default task
 gulp.task('default', [ 'icons' ]);
