@@ -3,6 +3,15 @@
 > siimple-icons is a suite of scalable icons for web, desktop and mobile projects.
 
 
+## Installation 
+
+Use [bower](https://bower.io) to install the latest version of **siimple-icons**:
+
+```
+bower install siimple-icons --save
+```
+
+
 ## Usage
 
 ### Using the SVG sprite
