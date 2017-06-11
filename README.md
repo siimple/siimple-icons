@@ -39,9 +39,9 @@ Where `ICON` is the ID of the wanted icon. You can use CSS to change the width, 
 </style>
 ```
 
-## Build the sprite
+## Build instructions
 
-Navigate to the **siimple-icons** folder and install all dependencies using **npm**:
+First, you must navigate to the **siimple-icons** folder and install all dependencies using **npm**:
 
 ```
 npm install
@@ -52,12 +52,16 @@ Be sure that you have [gulp](https://github.com/gulpjs/gulp) installed globally.
 ```
 npm install -g gulp
 ```
+ 
+### Build the sprite
 
-Now you can generate the sprite with all the images running the following command:
+You can generate the sprite with all the images running the following command:
 
 ```
 gulp sprite
 ```
+
+This will generate a file called `siimple-icons.svg` on the `dist` folder.
 
 
 
