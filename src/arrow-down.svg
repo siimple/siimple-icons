@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="48" width="48" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 48 48">
-<g transform="matrix(.89735 0 0 .87340 2.4552 -874.2)">
+<g transform="matrix(1.2181 0 0 1.1856 -5.2588 -1195.2)">
 <g transform="matrix(0,-1,1,0,-1004.4,1052.4)">
-<path style="color-rendering:auto;text-decoration-color:#000000;color:#000000;shape-rendering:auto;solid-color:#000000;text-decoration-line:none;fill:#000000;mix-blend-mode:normal;block-progression:tb;text-indent:0;image-rendering:auto;white-space:normal;text-decoration-style:solid;isolation:auto;text-transform:none" d="m17.961 1018.4c-1.247 0.056-1.898 1.2537-2.7572 1.9876-2.2828 2.2902-4.584 4.5693-6.8554 6.8662-0.7125 0.9303-0.34184 2.2918 0.58261 2.9248 2.6016 2.5959 5.192 5.2033 7.8006 7.792 1.1457 1.0774 3.2494 0.2005 3.2907-1.3717 0.10761-1.3317-1.1732-2.0413-1.9373-2.9225-1.0856-1.0857-2.1713-2.1713-3.2569-3.2569 7.7905 0 15.581 0.01 23.372-0.01 1.5716-0.057 2.4275-2.1694 1.3387-3.3043-0.86504-1.0061-2.2611-0.6065-3.4181-0.6885h-21.292c1.6067-1.6374 3.2788-3.2163 4.8431-4.8915 0.93789-1.2887-0.11595-3.2211-1.7103-3.128z"/>
+<path style="color-rendering:auto;text-decoration-color:#000000;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;block-progression:tb;text-decoration-line:none;image-rendering:auto;white-space:normal;text-indent:0;text-transform:none;text-decoration-style:solid;fill:#000000" d="m17.961 1018.4c-1.247 0.056-1.898 1.2537-2.7572 1.9876-2.2828 2.2902-4.584 4.5693-6.8554 6.8662-0.7125 0.9303-0.34184 2.2918 0.58261 2.9248 2.6016 2.5959 5.192 5.2033 7.8006 7.792 1.1457 1.0774 3.2494 0.2005 3.2907-1.3717 0.10761-1.3317-1.1732-2.0413-1.9373-2.9225-1.0856-1.0857-2.1713-2.1713-3.2569-3.2569 7.7905 0 15.581 0.01 23.372-0.01 1.5716-0.057 2.4275-2.1694 1.3387-3.3043-0.86504-1.0061-2.2611-0.6065-3.4181-0.6885h-21.292c1.6067-1.6374 3.2788-3.2163 4.8431-4.8915 0.93789-1.2887-0.11595-3.2211-1.7103-3.128z"/>
 </g>
 </g>
 </svg>
