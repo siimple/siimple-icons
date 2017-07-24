@@ -11,6 +11,7 @@
     "gulp-svgstore": "6.1.0",
     "gulp-svgmin": "1.2.3",
     "gulp-rename": "1.2.2",
+    "gulp-compile-handlebars": "^0.6.1",
     "stattic": "0.1.7"
   }
 }
