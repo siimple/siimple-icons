@@ -19,7 +19,7 @@ gulp.task('clean', function()
 gulp.task('sprite', function()
 {
   //Get the svg files
-  gulp.src('./src/*.svg', { base: './src' })
+  gulp.src('./svg/*.svg', { base: './src' })
 
   //Minimize each file
   .pipe(svgmin(function(file)
@@ -51,7 +51,7 @@ gulp.task('examples', function()
   var data = { files: [] };
 
   //Get the files
-  data.files = fs.readdirSync('./src/').filter(function(el)
+  data.files = fs.readdirSync('./svg/').filter(function(el)
   {
     return el !== '.DS_Store';
   }).map(function(el)
