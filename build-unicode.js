@@ -17,11 +17,8 @@ fs.readdir(icons_folder, function(error, files)
   //Check the error
   if(error){ throw error; }
 
-  //Get the total number of files
-  var files_total = files.length;
-
-  //Files counter
-  var files_counter = 0;
+  //Initialize the unicode counter
+  var counter = 0;
 
   //Initialize the writable stream
   var writable = fs.createWriteStream('./icons.json', { encoding: 'utf8' });
@@ -42,11 +39,18 @@ fs.readdir(icons_folder, function(error, files)
     //Check the icon extension
     if(path.extname(file) !== '.svg'){ return; }
 
+    //Check for first item
+    if(counter > 0)
+    {
+      //Add the comma and a new line break
+      writable.write(',' + endl);
+    }
+
     //Get the icon id
     var icon_id = path.basename(file, '.svg');
 
     //Get the unicode value
-    var icon_unicode = '&#xE' + ('00' + files_counter.toString()).slice(-3);
+    var icon_unicode = '&#xE' + ('00' + counter.toString()).slice(-3);
 
     //Get the icon path
     var icon_path = path.join(icons_folder, file);
@@ -54,20 +58,10 @@ fs.readdir(icons_folder, function(error, files)
     //Write the file information
     writable.write(tab + '{ "id": "' + icon_id + '", "unicode": "' + icon_unicode + '", "path": "' + icon_path + '" }');
 
-    //Increment the files counter
-    files_counter = files_counter + 1;
-
-    //Check for the last item
-    if(files_counter < files_total)
-    {
-      //Add the comma
-      writable.write(',');
-    }
-
-    //Add the line break
-    writable.write(endl);
+    //Increment the counter
+    counter = counter + 1;
   });
 
   //End the writable file
-  writable.end(']' + endl);
+  writable.end(endl + ']' + endl);
 });
