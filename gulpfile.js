@@ -60,17 +60,17 @@ gulp.task('build-font-svg', function()
 gulp.task('build-font-ttf', function()
 {
   //Convert the svg font to ttf
-  gulp.src('./dist/siimple-icons.font.svg').pipe(svg2ttf()).pipe(gulp.dest('./dist'));
+  gulp.src('./dist/**.font.svg').pipe(svg2ttf()).pipe(gulp.dest('./dist'));
 });
 
 //Build font in woff format
 gulp.task('build-font-woff', function()
 {
   //Convert the ttf font to woff
-  gulp.src('./dist/siimple-icons.font.ttf').pipe(ttf2woff()).pipe(gulp.dest('./dist'));
+  gulp.src('./dist/**.font.ttf').pipe(ttf2woff()).pipe(gulp.dest('./dist'));
 
   //Convert the ttf font to woff2
-  gulp.src('./dist/siimple-icons.font.ttf').pipe(ttf2woff2()).pipe(gulp.dest('./dist'));
+  gulp.src('./dist/**.font.ttf').pipe(ttf2woff2()).pipe(gulp.dest('./dist'));
 });
 
 //Build the svg sprite task
