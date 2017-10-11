@@ -50,7 +50,7 @@ fs.readdir(icons_folder, function(error, files)
     var icon_id = path.basename(file, '.svg');
 
     //Get the unicode value
-    var icon_unicode = '&#xE' + ('00' + counter.toString()).slice(-3);
+    var icon_unicode = '\\uE' + ('00' + counter.toString()).slice(-3);
 
     //Get the icon path
     var icon_path = path.join(icons_folder, file);
