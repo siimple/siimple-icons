@@ -18,7 +18,7 @@ fs.readdir(icons_folder, function(error, files)
   if(error){ throw error; }
 
   //Initialize the unicode counter
-  var counter = 0;
+  var icon_unicode = 57344;
 
   //Initialize the writable stream
   var writable = fs.createWriteStream('./icons.json', { encoding: 'utf8' });
@@ -49,17 +49,14 @@ fs.readdir(icons_folder, function(error, files)
     //Get the icon id
     var icon_id = path.basename(file, '.svg');
 
-    //Get the unicode value
-    var icon_unicode = '\\uE' + ('00' + counter.toString()).slice(-3);
-
     //Get the icon path
     var icon_path = path.join(icons_folder, file);
 
     //Write the file information
-    writable.write(tab + '{ "id": "' + icon_id + '", "unicode": "' + icon_unicode + '", "path": "' + icon_path + '" }');
+    writable.write(tab + '{ "id": "' + icon_id + '", "unicode": ' + icon_unicode + ', "path": "' + icon_path + '" }');
 
     //Increment the counter
-    counter = counter + 1;
+    icon_unicode = icon_unicode + 1;
   });
 
   //End the writable file
