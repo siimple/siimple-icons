@@ -21,6 +21,7 @@
   },
   "scripts":
   {
-    "serve": "node ./node_modules/stattic/cli.js --port 5000 --cors"
+    "serve": "node ./node_modules/stattic/cli.js --port 5000 --cors",
+    "build-font": "gulp build-font-svg && gulp build-font-ttf && gulp build-font-woff"
   }
 }
