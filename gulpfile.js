@@ -45,7 +45,7 @@ gulp.task('build-font-svg', function()
       var reader = fs.createReadStream(icon.path);
 
       //Set the icon metadata
-      reader.metadata = { unicode: [ icon.unicode ], name: icon.id };
+      reader.metadata = { unicode: [ String.fromCharCode(icon.unicode) ], name: icon.id };
 
       //Write the icon
       fontStream.write(reader);
@@ -102,6 +102,9 @@ gulp.task('build-sprite', function()
   .pipe(gulp.dest('./dist'));
 });
 
+//Compile default task
+gulp.task('compile', [ 'compile-scss' ]);
+
 //Create the example files
 gulp.task('examples', function()
 {
@@ -128,6 +131,26 @@ gulp.task('examples', function()
 
   //Save to examples
   .pipe(gulp.dest('./examples/'));
+});
+
+//Compile the scss templates
+gulp.task('compile-scss', function()
+{
+  //Read the icons files
+  utily.json.read('./icons.json', function(error, icons)
+  {
+    //Check the error
+    if(error){ throw error; }
+
+    //Select the scss templates
+    gulp.src('./templates/**.scss.handlebars')
+
+    //Compile using handlebars and rename the output files
+    .pipe(handlebars({ icons: icons }, {})).pipe(rename({ extname: '' }))
+
+    //Save to the scss folder
+    .pipe(gulp.dest('./scss'));
+  });
 });
 
 //Default task
