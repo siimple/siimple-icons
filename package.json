@@ -6,12 +6,16 @@
   "license": "MIT",
   "devDependencies":
   {
-    "rmr": "0.0.4",
-    "gulp": "3.9.1",
-    "gulp-svgstore": "6.1.0",
-    "gulp-svgmin": "1.2.3",
-    "gulp-rename": "1.2.2",
+    "rmr": "^0.0.4",
+    "gulp": "^3.9.1",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-rename": "^1.2.2",
     "gulp-compile-handlebars": "^0.6.1",
-    "stattic": "0.1.7"
+    "stattic": "^0.2.0"
+  },
+  "scripts":
+  {
+    "serve": "node ./node_modules/stattic/cli.js --port 5000 --cors"
   }
 }
