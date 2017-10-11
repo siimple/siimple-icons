@@ -3,7 +3,11 @@
   "author": "Josemi Juanes <josemijuanes@gmail.com>",
   "homepage": "http://siimple.juanes.xyz",
   "ignore": [ "package.json", "**/.*" ],
-  "repository": { "type": "git", "url": "https://github.com/siimple/siimple-icons.git" },
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/siimple/siimple-icons.git"
+  },
   "license": "MIT",
   "keywords": [ "siimple", "icons", "svg", "svg-icons" ],
   "dependencies": {}
