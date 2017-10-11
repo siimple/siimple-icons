@@ -68,17 +68,13 @@ gulp.task('build-font-woff', function()
 {
   //Convert the ttf font to woff
   gulp.src('./dist/siimple-icons.font.ttf').pipe(ttf2woff()).pipe(gulp.dest('./dist'));
-});
-
-//Build font in woff2 format
-gulp.task('build-font-woff2', function()
 {
   //Convert the ttf font to woff2
   gulp.src('./dist/siimple-icons.font.ttf').pipe(ttf2woff2()).pipe(gulp.dest('./dist'));
 });
 
 //Build the svg sprite task
-gulp.task('sprite', function()
+gulp.task('build-sprite', function()
 {
   //Get the svg files
   gulp.src('./svg/*.svg', { base: './src' })
@@ -135,4 +131,4 @@ gulp.task('examples', function()
 });
 
 //Default task
-gulp.task('default', [ 'clean', 'sprite' ]);
+gulp.task('default', [ 'clean', 'build-sprite' ]);
