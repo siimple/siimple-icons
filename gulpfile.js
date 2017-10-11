@@ -10,6 +10,7 @@ var handlebars = require('gulp-compile-handlebars');
 var SVGIcons2SVGFontStream = require('svgicons2svgfont');
 var svg2ttf = require('gulp-svg2ttf');
 var ttf2woff2 = require('gulp-ttf2woff2');
+var ttf2woff = require('gulp-ttf2woff');
 var utily = require('utily');
 
 //Clean the dist folder
@@ -60,6 +61,13 @@ gulp.task('build-font-ttf', function()
 {
   //Convert the svg font to ttf
   gulp.src('./dist/siimple-icons.font.svg').pipe(svg2ttf()).pipe(gulp.dest('./dist'));
+});
+
+//Build font in woff format
+gulp.task('build-font-woff', function()
+{
+  //Convert the ttf font to woff
+  gulp.src('./dist/siimple-icons.font.ttf').pipe(ttf2woff()).pipe(gulp.dest('./dist'));
 });
 
 //Build font in woff2 format
