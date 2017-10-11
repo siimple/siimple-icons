@@ -68,7 +68,7 @@ gulp.task('build-font-woff', function()
 {
   //Convert the ttf font to woff
   gulp.src('./dist/siimple-icons.font.ttf').pipe(ttf2woff()).pipe(gulp.dest('./dist'));
-{
+
   //Convert the ttf font to woff2
   gulp.src('./dist/siimple-icons.font.ttf').pipe(ttf2woff2()).pipe(gulp.dest('./dist'));
 });
