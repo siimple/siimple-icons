@@ -8,8 +8,11 @@ var endl = '\n';
 //Tabular character
 var tab = ' ';
 
+//Icons folder
+var icons_folder = './svg/';
+
 //Read the svg icons folder
-fs.readdir('./svg/', function(error, files)
+fs.readdir(icons_folder, function(error, files)
 {
   //Check the error
   if(error){ throw error; }
@@ -40,13 +43,16 @@ fs.readdir('./svg/', function(error, files)
     if(path.extname(file) !== '.svg'){ return; }
 
     //Get the icon id
-    var id = path.basename(file, '.svg');
+    var icon_id = path.basename(file, '.svg');
 
     //Get the unicode value
-    var unicode = '&#xE' + ('00' + files_counter.toString()).slice(-3);
+    var icon_unicode = '&#xE' + ('00' + files_counter.toString()).slice(-3);
+
+    //Get the icon path
+    var icon_path = path.join(icons_folder, file);
 
     //Write the file information
-    writable.write(tab + '{ "id": "' + id + '", "unicode": "' + unicode + '" }');
+    writable.write(tab + '{ "id": "' + icon_id + '", "unicode": "' + icon_unicode + '", "path": "' + icon_path + '" }');
 
     //Increment the files counter
     files_counter = files_counter + 1;
