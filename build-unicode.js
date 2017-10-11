@@ -11,6 +11,9 @@ var tab = ' ';
 //Icons folder
 var icons_folder = './svg/';
 
+//Unicode start
+var unicode_start = 57344;
+
 //Read the svg icons folder
 fs.readdir(icons_folder, function(error, files)
 {
@@ -18,7 +21,7 @@ fs.readdir(icons_folder, function(error, files)
   if(error){ throw error; }
 
   //Initialize the unicode counter
-  var icon_unicode = 57344;
+  var icon_unicode = unicode_start;
 
   //Initialize the writable stream
   var writable = fs.createWriteStream('./icons.json', { encoding: 'utf8' });
@@ -40,7 +43,7 @@ fs.readdir(icons_folder, function(error, files)
     if(path.extname(file) !== '.svg'){ return; }
 
     //Check for first item
-    if(counter > 0)
+    if(icon_unicode > unicode_start)
     {
       //Add the comma and a new line break
       writable.write(',' + endl);
