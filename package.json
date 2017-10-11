@@ -1,7 +1,7 @@
 {
   "name": "siimple-icons",
   "version": "0.0.1",
-  "description": "",
+  "description": "A suite of scalable icons for web, desktop and mobile projects",
   "author": "Josemi Juanes <josemijuanes@gmail.com>",
   "license": "MIT",
   "devDependencies":
@@ -12,7 +12,10 @@
     "gulp-svgmin": "^1.2.4",
     "gulp-rename": "^1.2.2",
     "gulp-compile-handlebars": "^0.6.1",
-    "stattic": "^0.2.0"
+    "svgicons2svgfont": "^7.0.2",
+    "svg2ttf": "^4.1.0",
+    "stattic": "^0.2.0",
+    "utily": "^0.2.3"
   },
   "scripts":
   {
