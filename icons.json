@@ -28,5 +28,5 @@
  { "id": "time", "unicode": "&#xE026", "path": "svg/time.svg" },
  { "id": "trash", "unicode": "&#xE027", "path": "svg/trash.svg" },
  { "id": "zoom-in", "unicode": "&#xE028", "path": "svg/zoom-in.svg" },
- { "id": "zoom-out", "unicode": "&#xE029", "path": "svg/zoom-out.svg" },
+ { "id": "zoom-out", "unicode": "&#xE029", "path": "svg/zoom-out.svg" }
 ]
