@@ -17,7 +17,8 @@ utily.json.read('./icons.json', function(error, icons)
   options.helpers.unicode_parser = function(value)
   {
     //Return the unicode value parsed
-    return '\\' + value.toString(16).toUpperCase();
+    //return '\\' + value.toString(16).toUpperCase();
+    return value;
   };
 
   //Select the scss templates
