@@ -1,0 +1,17 @@
+//
+// siimple-icons: A suite of scalable icons for web, desktop and mobile projects
+// Under the MIT LICENSE.
+// License:    https://github.com/siimple/siimple-icons/blob/master/LICENSE.md
+// Repository: https://github.com/siimple/siimple-icons
+// Website:    https://www.siimple.xyz
+//
+
+//Get a icon by name
+@function siimple-icon($icon)
+{
+  //Get the icon unicodde
+  $value: map-get($siimple-icons, "#{$icon}");
+
+  //Return the icon unicode value
+  @return $value;
+};
