@@ -1,0 +1,15 @@
+//
+// siimple-icons: A suite of scalable icons for web, desktop and mobile projects
+// Under the MIT LICENSE.
+// License:    https://github.com/siimple/siimple-icons/blob/master/LICENSE.md
+// Repository: https://github.com/siimple/siimple-icons
+// Website:    https://www.siimple.xyz
+//
+
+//Icons list
+$siimple-icons:
+(
+  {{#each icons}}
+  "{{this.id}}": "{{unicode_parser this.unicode}}"{{#unless @last}}, {{/unless}}
+  {{/each}}
+);
