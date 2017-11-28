@@ -12,7 +12,7 @@ var tab = ' ';
 var icons_folder = './svg/';
 
 //Unicode start
-var unicode_start = 65280;
+var unicode_start = 57344;
 
 //Read the svg icons folder
 fs.readdir(icons_folder, function(error, files)
