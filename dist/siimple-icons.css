@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'SiimpleIcons';
+  src: url("./siimple-icons.font.ttf") format("truetype"), url("./siimple-icons.font.woff") format("woff"), url("./siimple-icons.font.woff2") format("woff2"), url("./siimple-icons.font.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.si {
+  display: inline-block;
+  font-family: 'SiimpleIcons';
+  font-size: 14px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  .si-alert-done:before {
+    content: "\e000"; }
+  .si-alert-error:before {
+    content: "\e001"; }
+  .si-alert-info:before {
+    content: "\e002"; }
+  .si-alert-warning:before {
+    content: "\e003"; }
+  .si-arrow-down:before {
+    content: "\e004"; }
+  .si-arrow-left:before {
+    content: "\e005"; }
+  .si-arrow-right:before {
+    content: "\e006"; }
+  .si-arrow-up:before {
+    content: "\e007"; }
+  .si-check:before {
+    content: "\e008"; }
+  .si-chevron-down:before {
+    content: "\e009"; }
+  .si-chevron-left:before {
+    content: "\e00a"; }
+  .si-chevron-right:before {
+    content: "\e00b"; }
+  .si-chevron-up:before {
+    content: "\e00c"; }
+  .si-close:before {
+    content: "\e00d"; }
+  .si-file-empty:before {
+    content: "\e00e"; }
+  .si-file:before {
+    content: "\e00f"; }
+  .si-folder:before {
+    content: "\e010"; }
+  .si-home:before {
+    content: "\e011"; }
+  .si-list:before {
+    content: "\e012"; }
+  .si-menu:before {
+    content: "\e013"; }
+  .si-minus:before {
+    content: "\e014"; }
+  .si-plus:before {
+    content: "\e015"; }
+  .si-processing:before {
+    content: "\e016"; }
+  .si-search:before {
+    content: "\e017"; }
+  .si-settings:before {
+    content: "\e018"; }
+  .si-star:before {
+    content: "\e019"; }
+  .si-time:before {
+    content: "\e01a"; }
+  .si-trash:before {
+    content: "\e01b"; }
+  .si-zoom-in:before {
+    content: "\e01c"; }
+  .si-zoom-out:before {
+    content: "\e01d"; }
