@@ -95,7 +95,7 @@ k.then(function(next)
 k.then(function(next)
 {
   //Create the new font stream
-  var fontStream = new SVGIcons2SVGFontStream({ fontName: 'siimple-icons', normalize: true, fontHeight: 1000 });
+  var fontStream = new SVGIcons2SVGFontStream({ fontName: 'SiimpleIcons', normalize: true, fontHeight: 1000 });
 
   //Writer stream
   var writer = fs.createWriteStream('dist/siimple-icons.font.svg');
@@ -136,7 +136,7 @@ k.then(function(next)
   writer.on('finish', function(){ return next(); });
 });
 
-//Build font in ttf formt
+//Build font in ttf format
 k.then(function(next)
 {
   //Output stream
