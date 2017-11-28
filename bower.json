@@ -1,7 +1,7 @@
 {
   "name": "siimple-icons",
   "author": "Josemi Juanes <josemijuanes@gmail.com>",
-  "homepage": "http://siimple.juanes.xyz",
+  "homepage": "https://www.siimple.xyz",
   "ignore": [ "package.json", "**/.*" ],
   "repository":
   {
