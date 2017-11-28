@@ -12,7 +12,7 @@ var tab = ' ';
 var icons_folder = './svg/';
 
 //Unicode start
-var unicode_start = 57344;
+var unicode_start = 65280;
 
 //Read the svg icons folder
 fs.readdir(icons_folder, function(error, files)
@@ -53,10 +53,10 @@ fs.readdir(icons_folder, function(error, files)
     var icon_id = path.basename(file, '.svg');
 
     //Get the icon path
-    var icon_path = path.join(icons_folder, file);
+    //var icon_path = path.join(icons_folder, file);
 
     //Write the file information
-    writable.write(tab + '{ "id": "' + icon_id + '", "unicode": ' + icon_unicode + ', "path": "' + icon_path + '" }');
+    writable.write(tab + '{ "unicode": ' + icon_unicode + ', "id": "' + icon_id + '" }');
 
     //Increment the counter
     icon_unicode = icon_unicode + 1;
