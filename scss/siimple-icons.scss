@@ -1,0 +1,39 @@
+//
+// siimple-icons: A suite of scalable icons for web, desktop and mobile projects
+// Under the MIT LICENSE.
+// License:    https://github.com/siimple/siimple-icons/blob/master/LICENSE.md
+// Repository: https://github.com/siimple/siimple-icons
+// Website:    https://siimple.juanes.xyz
+//
+
+//Import dependencies
+@import "./_all.scss";
+
+//Font face
+@font-face {
+  font-family: 'SiimpleIcons';
+  src: url('./siimple-icons.font.ttf') format('truetype'),
+       url('./siimple-icons.font.woff') format('woff'),
+       url('./siimple-icons.font.woff2') format('woff2'),
+       url('./siimple-icons.font.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//Icon class
+.si
+{
+  display: inline-block;
+  font-family: 'SiimpleIcons';
+  font-size: 14px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  //For each icon in the list
+  @each $icon, $unicode in $siimple-icons
+  {
+    //Add the icon class
+    &-#{$icon}:before { content: siimple-icon($icon); }
+  }
+}
