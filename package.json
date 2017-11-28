@@ -4,8 +4,11 @@
   "description": "A suite of scalable icons for web, desktop and mobile projects",
   "author": "Josemi Juanes <josemijuanes@gmail.com>",
   "license": "MIT",
-  "devDependencies":
-  {
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siimple/siimple-icons"
+  },
+  "devDependencies": {
     "rmr": "^0.0.4",
     "gulp": "^3.9.1",
     "gulp-svgstore": "^6.1.0",
@@ -18,14 +21,13 @@
     "gulp-ttf2woff2": "^2.0.2",
     "gulp-sass": "^3.1.0",
     "stattic": "^0.2.0",
-    "utily": "^0.2.3"
+    "utily": "^0.2.3",
+    "keue": "^0.1.0",
+    "logty": "^0.4.2"
   },
-  "scripts":
-  {
-    "serve": "node ./node_modules/stattic/cli.js --port 5000 --cors",
-    "build-fonts": "gulp build-font-svg && gulp build-font-ttf && gulp build-font-woff",
-    "build-css": "gulp build-css",
-    "build-sprite": "gulp build-sprite",
-    "prepare": "node build-unicode.js && gulp compile-handlebars"
+  "scripts": {
+    "dev": "node ./node_modules/stattic/cli.js --port 5000 --cors",
+    "build": "node ./scripts/build.js",
+    "compile": "node ./scripts/compile.js"
   }
 }
