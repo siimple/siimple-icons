@@ -15,19 +15,24 @@
     "gulp-svgmin": "^1.2.4",
     "gulp-rename": "^1.2.2",
     "gulp-compile-handlebars": "^0.6.1",
+    "gulp-nunjucks-render": "2.2.1",
     "svgicons2svgfont": "^7.0.2",
     "gulp-svg2ttf": "^2.0.1",
     "gulp-ttf2woff": "^1.1.1",
     "gulp-ttf2woff2": "^2.0.2",
     "gulp-sass": "^3.1.0",
-    "stattic": "^0.2.0",
-    "utily": "^0.2.3",
+    "stattic": "^0.2.3",
+    "utily": "^0.2.4",
     "keue": "^0.1.0",
     "logty": "^0.4.2"
   },
   "scripts": {
     "dev": "node ./node_modules/stattic/cli.js --port 5000 --cors",
     "build": "node ./scripts/build.js",
-    "compile": "node ./scripts/compile.js"
+    "compile": "node ./scripts/compile.js",
+    "docs": "npm run docs:build && npm run docs:serve",
+    "docs:build": "node ./scripts/docs.js",
+    "docs:deploy": "",
+    "docs:serve": "node ./node_modules/stattic/cli.js --folder ./docs/dist --port 5000 --cors"
   }
 }
