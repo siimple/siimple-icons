@@ -13,21 +13,22 @@ var ttf2woff = require('gulp-ttf2woff');
 var utily = require('utily');
 var keue = require('keue');
 var sass = require('gulp-sass');
+var logty = require('logty');
 
-//Import configuration
-var config = require('./config.js');
+//Get the new logty instance
+var log = new logty(null);
 
-//Logger
-var log = config.logger();
+//Pipe to the console
+log.pipe(process.stdout);
 
 //Initialize the functions queue
 var k = new keue(function(next)
 {
   //Display in logs
-  log.debug('Cleaning folder ' + config.dist);
+  log.info('Cleaning folder ./dist');
 
   //Clean the dist folder
-  rmr.sync(config.dist);
+  rmr.sync('./dist/');
 
   //Continue with the next task
   return next();
@@ -37,7 +38,7 @@ var k = new keue(function(next)
 k.then(function(next)
 {
   //Print in console
-  log.debug('Building CSS files...');
+  log.info('Building CSS files...');
 
   //Select all the SCSS files
   return gulp.src('scss/**/*.scss')
@@ -46,10 +47,10 @@ k.then(function(next)
   .pipe(sass().on('error', sass.logError))
 
   //Pipe and save to the dist folder
-  .pipe(gulp.dest(config.dist).on('finish', function()
+  .pipe(gulp.dest('./dist').on('finish', function()
   {
     //Print in console
-    log.debug('CSS files saved in ' + config.dist);
+    log.info('CSS files saved in ./dist');
 
     //Continue
     return next();
@@ -60,7 +61,7 @@ k.then(function(next)
 k.then(function(next)
 {
   //Output stream
-  var writer = gulp.dest(config.dist);
+  var writer = gulp.dest('./dist/');
 
   //Finish event
   writer.on('finish', next);
@@ -73,9 +74,6 @@ k.then(function(next)
   {
     //Get the icon prefix
     var prefix = path.basename(file.relative, path.extname(file.relative));
-
-    //Display in console
-    //console.log('Processing ' + prefix);
 
     //Return the prefix plugin
     return { plugins: [ { cleanupIDs: { prefix: prefix + '-',  minify: true } } ] };
@@ -91,6 +89,23 @@ k.then(function(next)
   .pipe(writer);
 });
 
+//Create the fonts folder
+k.then(function(next)
+{
+  //Print in logs
+  log.info('Creating folder ./dist/fonts');
+
+  //Create the fonts folder
+  return utily.fs.mkdir('./dist/fonts', function(error)
+  {
+    //Check the error
+    if(error){ throw error; }
+
+    //Continue
+    return next();
+  });
+});
+
 //Build the SVG font
 k.then(function(next)
 {
@@ -98,7 +113,10 @@ k.then(function(next)
   var fontStream = new SVGIcons2SVGFontStream({ fontName: 'SiimpleIcons', normalize: true, fontHeight: 1000 });
 
   //Writer stream
-  var writer = fs.createWriteStream('dist/siimple-icons.font.svg');
+  var writer = fs.createWriteStream('dist/fonts/siimple-icons.font.svg');
+
+  //Print in logs
+  log.info('Creating svg font in ./dist/fonts');
 
   //Pipe the font stream
   fontStream.pipe(writer);
@@ -140,43 +158,52 @@ k.then(function(next)
 k.then(function(next)
 {
   //Output stream
-  var writer = gulp.dest(config.dist);
+  var writer = gulp.dest('./dist/fonts/');
+
+  //Print in logs
+  log.info('Creating ttf font in ./dist/fonts');
 
   //Finish event
   writer.on('finish', next);
 
   //Convert the svg font to ttf
-  gulp.src('./dist/**.font.svg').pipe(svg2ttf()).pipe(writer);
+  gulp.src('./dist/fonts/**.font.svg').pipe(svg2ttf()).pipe(writer);
 });
 
 //Build font in woff format
 k.then(function(next)
 {
   //Output stream
-  var writer = gulp.dest(config.dist);
+  var writer = gulp.dest('./dist/fonts/');
+
+  //Print in logs
+  log.info('Creating woff font in ./dist/fonts');
 
   //Finish event
   writer.on('finish', next);
 
   //Convert the ttf font to woff
-  gulp.src('./dist/**.font.ttf').pipe(ttf2woff()).pipe(writer);
+  gulp.src('./dist/fonts/**.font.ttf').pipe(ttf2woff()).pipe(writer);
 });
 
 //Build font in woff2 format
 k.then(function(next)
 {
   //Output stream
-  var writer = gulp.dest(config.dist);
+  var writer = gulp.dest('./dist/fonts/');
+
+  //Print in logs
+  log.info('Creating woff2 font in ./dist/fonts');
 
   //Finish event
   writer.on('finish', next);
 
   //Convert the ttf font to woff2
-  gulp.src('./dist/**.font.ttf').pipe(ttf2woff2()).pipe(writer);
+  gulp.src('./dist/fonts/**.font.ttf').pipe(ttf2woff2()).pipe(writer);
 });
 
 //Queue finished
 k.finish(function()
 {
-  log.debug('Build completed');
+  log.info('Build completed');
 });
