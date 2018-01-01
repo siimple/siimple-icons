@@ -6,7 +6,7 @@ var path = require('path');
 var endl = '\n';
 
 //Tabular character
-var tab = ' ';
+var tab = '  ';
 
 //Icons folder
 var icons_folder = './svg/';
