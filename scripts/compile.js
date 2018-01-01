@@ -3,12 +3,13 @@ var gulp = require('gulp');
 var rename = require("gulp-rename");
 var handlebars = require('gulp-compile-handlebars');
 var utily = require('utily');
+var logty = require('logty');
 
-//Import config
-var config = require('./config.js');
+//Get the new logty instance
+var log = new logty(null);
 
-//Initialize the new logger
-var log = config.logger();
+//Pipe to the console
+log.pipe(process.stdout);
 
 //Display in logs
 log.debug('Reading icons file...');
@@ -20,7 +21,7 @@ utily.json.read('./icons.json', function(error, icons)
   if(error){ throw error; }
 
   //Display the number of icons in console
-  log.debug('Read ' + icons.length + ' icons');
+  log.info('Read ' + icons.length + ' icons');
 
   //Initialize the handlebars options
   var options = { helpers: {} };
@@ -33,7 +34,7 @@ utily.json.read('./icons.json', function(error, icons)
   };
 
   //Display in console
-  log.debug('Generating SCSS files...');
+  log.info('Generating SCSS files...');
 
   //Select the scss templates
   gulp.src('./templates/**.scss.handlebars')
@@ -48,6 +49,6 @@ utily.json.read('./icons.json', function(error, icons)
   .pipe(gulp.dest('./scss').on('finish', function()
   {
     //Display in console
-    log.debug('Compiled files saved in ./scss folder')
+    log.info('Compiled files saved in ./scss folder')
   }));
 });
