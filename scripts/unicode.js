@@ -1,67 +1,47 @@
-//Import dependencies
-var fs = require('fs');
-var path = require('path');
+var fs = require("fs");
+var path = require("path");
 
-//Line break
-var endl = '\n';
-
-//Tabular character
-var tab = '  ';
-
-//Icons folder
-var icons_folder = './svg/';
-
-//Unicode start
-var unicode_start = 57344;
+var iconsFolder = "./svg/";
+var unicodeStart = 57344;
 
 //Read the svg icons folder
-fs.readdir(icons_folder, function(error, files)
-{
-  //Check the error
-  if(error){ throw error; }
-
-  //Initialize the unicode counter
-  var icon_unicode = unicode_start;
-
-  //Initialize the writable stream
-  var writable = fs.createWriteStream('./icons.json', { encoding: 'utf8' });
-
-  //Writable finish event
-  writable.on('finish', function()
-  {
-    //Display done
-    console.log('File created!');
-  });
-
-  //Initialize the output file
-  writable.write('[' + endl);
-
-  //For each file in the list
-  files.forEach(function(file)
-  {
-    //Check the icon extension
-    if(path.extname(file) !== '.svg'){ return; }
-
-    //Check for first item
-    if(icon_unicode > unicode_start)
-    {
-      //Add the comma and a new line break
-      writable.write(',' + endl);
+fs.readdir(iconsFolder, function (error, files) {
+    //Check the error
+    if (error) {
+        throw error;
     }
+    var endl = "\n";
+    var tab = "  ";
+    var iconUnicode = unicodeStart;
 
-    //Get the icon id
-    var icon_id = path.basename(file, '.svg');
+    //Initialize the writable stream
+    var writable = fs.createWriteStream("./icons.json", {encoding: "utf8"});
+    writable.on("finish", function () {
+        return console.log("File created!");
+    });
+    writable.write("[" + endl);
 
-    //Get the icon path
-    //var icon_path = path.join(icons_folder, file);
+    // For each file in the list
+    files.forEach(function (file) {
+        // Check if the file has svg extension
+        if (path.extname(file) === ".svg") {
+            // Check if the icon is not the first icon in the list to add the comma at
+            // the end of the las icon
+            if (iconUnicode > unicodeStart) {
+                //Add the comma and a new line break
+                writable.write("," + endl);
+            }
 
-    //Write the file information
-    writable.write(tab + '{ "unicode": ' + icon_unicode + ', "id": "' + icon_id + '" }');
+            //Get the icon information
+            var iconId = path.basename(file, ".svg");
+            //var iconPath = path.join(iconsFolder, file);
 
-    //Increment the counter
-    icon_unicode = icon_unicode + 1;
-  });
-
-  //End the writable file
-  writable.end(endl + ']' + endl);
+            //Write the icon information
+            writable.write(tab + "{\"unicode\": " + iconUnicode + ", \"id\": \"" + iconId + "\"}");
+            //Increment the unicode counter
+            iconUnicode = iconUnicode + 1;
+        }
+    });
+    //Finish the icons JSON file
+    writable.end(endl + "]" + endl);
 });
