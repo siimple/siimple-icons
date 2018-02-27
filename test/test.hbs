@@ -1,16 +1,15 @@
 <!-- Styles -->
 <style>
-  .icon
-  {
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-    fill: #15b7a1;
-  }
+    .icon {
+        width: 48px;
+        height: 48px;
+        display: inline-block;
+        fill: #15b7a1;
+    }
 </style>
 
-{{#each files}}
-  <svg viewBox="0 0 48 48" class="icon" id="icon">
-    <use xlink:href="../dist/siimple-icons.svg#{{this}}"></use>
-  </svg>
+{{#each icons as |icon|}}
+<svg viewBox="0 0 48 48" class="icon" id="icon">
+    <use xlink:href="../dist/siimple-icons.svg#{{icon.id}}"></use>
+</svg>
 {{/each}}
