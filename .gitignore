@@ -39,3 +39,6 @@ bower_components
 
 # IntelliJ project management
 *.iml
+
+# Compiled test files
+test/*.html
