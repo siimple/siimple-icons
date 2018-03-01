@@ -20,26 +20,24 @@ tasks.task("generate:tests", function (done) {
             if(index >= files.length) {
                 return done();
             }
-            let filePath = path.join(process.cwd(), files[index]);
-            let fileObj = path.parse(filePath);
-            tasks.logger.log("Compiling file " + filePath);
+            let file = path.join(process.cwd(), files[index]);
+            let fileObject = path.parse(file);
+            tasks.logger.log("Compiling file " + file);
             //Read the file content
-            return fs.readFile(filePath, "utf8", function(error, content){
+            return fs.readFile(file, "utf8", function(error, content){
                 if(error) {
                     return done(error);
                 }
                 //Compile the test file
                 let template = handlebars.compile(content);
-                let resultContent = template(data);
                 //Output file path
-                let resultObj = {dir: fileObj.dir, name: fileObj.name, ext: ".html"};
-                let resultPath = path.format(resultObj);
-                tasks.logger.log("Saving compiled test to " + resultPath);
-                return fs.writeFile(resultPath, resultContent, "utf8", function(error){
+                let output = path.format({dir: fileObject.dir, name: fileObject.name, ext: ".html"});
+                tasks.logger.log("Saving compiled test to " + output);
+                return fs.writeFile(output, template(data), "utf8", function(error){
                     if(error) {
                         return done(error);
                     }
-                    //File completed, next file on the list
+                    //File completed, continue with the next file in the list
                     return compileFile(index + 1);
                 });
             });
