@@ -82,7 +82,7 @@ tasks.task("compile:svg", function (done) {
                 let svgmin = new svgo({plugins: [{cleanupIDs: {prefix: prefix + '-', minify: true}}]});
                 return svgmin.optimize(content).then(function (result) {
                     //Save to the svg sprite
-                    sprites.add(prefix, result);
+                    sprites.add(prefix, result.data);
                     return parseSvg(index + 1);
                 });
             });
