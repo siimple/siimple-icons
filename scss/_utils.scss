@@ -6,12 +6,8 @@
 // Website:    https://www.siimple.xyz
 //
 
-//Get a icon by name
-@function siimple-icon($icon)
-{
-  //Get the icon unicodde
+//Get an icon by name
+@function siimple-icon($icon) {
   $value: map-get($siimple-icons, "#{$icon}");
-
-  //Return the icon unicode value
   @return unquote("\"") + unquote(str-insert($value, "\\", 1)) + unquote("\"");
-};
+}
