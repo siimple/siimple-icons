@@ -8,14 +8,26 @@ let tasks = require("./tasks.js");
 //Import icons
 let icons = require("../icons.json");
 
+//Register an handlebar helper to parse unicode values
+handlebars.registerHelper("unicodeParser", function(value){
+    return value.toString(16).toLowerCase();
+});
+
+//Header object
+let header = [];
+header.push("//");
+header.push("// WARNING: THIS FILE IS AUTO-GENERATED. DON'T EDIT IT.");
+header.push("// You can generate this file running `npm run templates:scss` from the project root.");
+header.push("//");
+
 //Function to compile the templates
-let compileTemplates = function (folder, extname, done) {
-    return glob("./templates/" + folder + "/**.hbs", function(error, files){
+let compileTemplates = function (folder, done) {
+    return glob("./templates/" + folder + "/*.hbs", function(error, files){
         if(error) {
             return done(error);
         }
         tasks.logger.log("Compiling " + files.length + " files");
-        let data = {icons: icons};
+        let data = {icons: icons, header: header.join("\n")};
         let compileTemplateFile = function(index) {
             if(index >= files.length) {
                 return done(null);
@@ -32,7 +44,7 @@ let compileTemplates = function (folder, extname, done) {
                 let template = handlebars.compile(content);
                 //Output file path
                 let outputDir = path.join(process.cwd(), folder);
-                let output = path.format({dir: outputDir, name: fileObject.name, ext: "." + extname});
+                let output = path.format({dir: outputDir, name: fileObject.name, ext: ""});
                 tasks.logger.log("Saving compiled test to " + output);
                 return fs.writeFile(output, template(data), "utf8", function(error){
                     if(error) {
@@ -49,14 +61,14 @@ let compileTemplates = function (folder, extname, done) {
 
 //Generate the scss files
 tasks.task("generate:scss", function (done) {
-    return compileTemplates("scss", "scss", function(error){
+    return compileTemplates("scss", function(error){
         return done(error);
     });
 });
 
 //Generate the test files
 tasks.task("generate:test", function(done){
-    return compileTemplates("test", "html", function(error){
+    return compileTemplates("test", function(error){
         return done(error);
     });
 });
