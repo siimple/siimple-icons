@@ -10,9 +10,8 @@
 //
 
 //Icons list
-$siimple-icons:
-(
-  {{#each icons}}
-  "{{this.id}}": "{{unicode_parser this.unicode}}"{{#unless @last}}, {{/unless}}
-  {{/each}}
+$siimple-icons: (
+{{#each icons}}
+    "{{this.id}}": "{{unicodeParser this.unicode}}"{{#unless @last}}, {{/unless}}
+{{/each}}
 );
