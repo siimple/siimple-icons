@@ -9,30 +9,33 @@
     "url": "https://github.com/siimple/siimple-icons"
   },
   "devDependencies": {
-    "rmr": "^0.0.4",
-    "gulp": "^3.9.1",
-    "gulp-svgstore": "^6.1.0",
-    "gulp-svgmin": "^1.2.4",
-    "gulp-rename": "^1.2.2",
-    "gulp-compile-handlebars": "^0.6.1",
-    "gulp-nunjucks-render": "2.2.1",
-    "svgicons2svgfont": "^7.0.2",
-    "gulp-svg2ttf": "^2.0.1",
-    "gulp-ttf2woff": "^1.1.1",
-    "gulp-ttf2woff2": "^2.0.2",
-    "gulp-sass": "^3.1.0",
-    "stattic": "^0.2.3",
+    "rmr": "^0.1.0",
+    "svgicons2svgfont": "^9.0.2",
+    "stattic": "^0.3.0",
     "utily": "^0.2.4",
-    "keue": "^0.1.0",
-    "logty": "^0.4.2"
+    "keue": "^0.3.0",
+    "time-stamp": "^2.0.0",
+    "handlebars": "^4.0.11",
+    "glob": "^7.1.2",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.7.2",
+    "svgo": "^1.0.5",
+    "svgstore": "^2.0.3",
+    "svg2ttf": "^4.1.0",
+    "ttf2woff": "^2.0.1",
+    "ttf2woff2": "^2.0.3",
+    "get-args": "^2.0.0"
   },
   "scripts": {
     "dev": "node ./node_modules/stattic/cli.js --port 5000 --cors",
     "build": "node ./scripts/build.js",
-    "compile": "node ./scripts/compile.js",
     "docs": "npm run docs:build && npm run docs:serve",
     "docs:build": "node ./scripts/docs.js",
     "docs:deploy": "",
-    "docs:serve": "node ./node_modules/stattic/cli.js --folder ./docs/dist --port 5000 --cors"
+    "docs:serve": "node ./node_modules/stattic/cli.js --folder ./docs/dist --port 5000 --cors",
+    "templates": "node ./scripts/templates.js",
+    "templates:scss": "node ./scripts/templates.js generate:scss",
+    "templates:test": "node ./scripts/templates.js generate:test",
+    "test": "node ./node_modules/stattic/cli.js --folder ./ --port 5000 --cors"
   }
 }
