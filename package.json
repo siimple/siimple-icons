@@ -8,6 +8,7 @@
     "type": "git",
     "url": "https://github.com/siimple/siimple-icons"
   },
+  "dependencies": {},
   "devDependencies": {
     "rmr": "^0.1.0",
     "svgicons2svgfont": "^9.0.2",
