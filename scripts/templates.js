@@ -2,8 +2,7 @@ let fs = require("fs");
 let path = require("path");
 let glob = require("glob");
 let handlebars = require("handlebars");
-
-let tasks = require("./tasks.js");
+let flow = require("tinyflow");
 
 //Import icons
 let icons = require("../icons.json");
@@ -27,7 +26,7 @@ let compileTemplates = function (folder, done) {
         if(error) {
             return done(error);
         }
-        tasks.logger.log("Compiling " + files.length + " files");
+        flow.log("Compiling " + files.length + " files");
         let data = {icons: icons, header: header.join("\n")};
         let compileTemplateFile = function(index) {
             if(index >= files.length) {
@@ -35,7 +34,7 @@ let compileTemplates = function (folder, done) {
             }
             let file = path.join(process.cwd(), files[index]);
             let fileObject = path.parse(file);
-            tasks.logger.log("Compiling file " + file);
+            flow.log("Compiling file " + file);
             //Read the file content
             return fs.readFile(file, "utf8", function(error, content){
                 if(error) {
@@ -46,7 +45,7 @@ let compileTemplates = function (folder, done) {
                 //Output file path
                 let outputDir = path.join(process.cwd(), folder);
                 let output = path.format({dir: outputDir, name: fileObject.name, ext: ""});
-                tasks.logger.log("Saving compiled test to " + output);
+                flow.log("Saving compiled test to " + output);
                 return fs.writeFile(output, template(data), "utf8", function(error){
                     if(error) {
                         return done(error);
@@ -61,18 +60,19 @@ let compileTemplates = function (folder, done) {
 };
 
 //Generate the scss files
-tasks.task("generate:scss", function (done) {
+flow.task("generate:scss", function (done) {
     return compileTemplates("scss", function(error){
         return done(error);
     });
 });
 
 //Generate the test files
-tasks.task("generate:test", function(done){
+flow.task("generate:test", function(done){
     return compileTemplates("test", function(error){
         return done(error);
     });
 });
 
-//Run all tasks
-tasks.run();
+//Define default tasks 
+flow.defaultTask(["generate:scss", "generate:test"]);
+
