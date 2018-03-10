@@ -1,7 +1,6 @@
 let fs = require("fs");
 let path = require("path");
-
-let tasks = require("./tasks.js");
+let flow = require("tinyflow");
 
 let icons = [];
 let iconsFolder = "./svg/";
@@ -9,7 +8,7 @@ let iconsFile = "./icons.json";
 let unicodeStart = 57344;
 
 //Unicode read task
-tasks.task("unicode:read", function (done) {
+flow.task("unicode:read", function (done) {
     return fs.readdir(iconsFolder, function (error, files) {
         if (error) {
             return done(error);
@@ -34,7 +33,7 @@ tasks.task("unicode:read", function (done) {
 });
 
 //Unicode write task
-tasks.task("unicode:write", function (done) {
+flow.task("unicode:write", function (done) {
     let endl = "\n";
     let tab = "  ";
     //Initialize the writable stream
@@ -58,4 +57,6 @@ tasks.task("unicode:write", function (done) {
     writable.end(endl + "]" + endl);
 });
 
-tasks.run();
+//Tasks to run
+flow.defaultTask(["unicode:read", "unicode:write"]);
+
