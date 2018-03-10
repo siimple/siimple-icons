@@ -21,6 +21,11 @@ paths.ttfFont = "./dist/fonts/siimple-icons.font.ttf";
 paths.woffFont = "./dist/fonts/siimple-icons.font.woff";
 paths.woff2Font = "./dist/fonts/siimple-icons.font.woff2";
 
+//Function that does nothing
+let noop = function () {
+    return;
+};
+
 //Clean dist folder
 flow.task("dist:clean", function (done) {
     flow.log("Cleaning folder ./dist");
@@ -93,6 +98,8 @@ flow.task("compile:svg", ["dist:clean", "dist:create"], function (done) {
 //Build the SVG font
 flow.task("font:svg", ["dist:clean", "dist:create"], function (done) {
     let fontOptions = {fontName: "SiimpleIcons", normalize: true, fontHeight: 1000}; 
+    //Disable logs in font generator
+    fontOptions.log = noop;
     let fontStream = new SVGIcons2SVGFontStream(fontOptions);
     let writer = fs.createWriteStream(paths.svgFont);
     fontStream.pipe(writer);
