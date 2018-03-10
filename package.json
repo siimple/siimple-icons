@@ -1,6 +1,6 @@
 {
   "name": "siimple-icons",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "A suite of scalable icons for web, desktop and mobile projects",
   "author": "Josemi Juanes <josemijuanes@gmail.com>",
   "license": "MIT",
@@ -12,7 +12,7 @@
   "devDependencies": {
     "rmr": "^0.1.0",
     "svgicons2svgfont": "^9.0.2",
-    "stattic": "^0.3.0",
+    "stattic": "^0.3.1",
     "utily": "^0.2.4",
     "keue": "^0.3.0",
     "time-stamp": "^2.0.0",
@@ -25,7 +25,7 @@
     "svg2ttf": "^4.1.0",
     "ttf2woff": "^2.0.1",
     "ttf2woff2": "^2.0.3",
-    "get-args": "^2.0.0"
+    "tinyflow": "^0.0.3"
   },
   "scripts": {
     "dev": "node ./node_modules/stattic/cli.js --port 5000 --cors",
@@ -35,8 +35,8 @@
     "docs:deploy": "",
     "docs:serve": "node ./node_modules/stattic/cli.js --folder ./docs/dist --port 5000 --cors",
     "templates": "node ./scripts/templates.js",
-    "templates:scss": "node ./scripts/templates.js generate:scss",
-    "templates:test": "node ./scripts/templates.js generate:test",
+    "templates:scss": "node ./scripts/templates.js --flow-tasks generate:scss",
+    "templates:test": "node ./scripts/templates.js --flow-tasks generate:test",
     "test": "node ./node_modules/stattic/cli.js --folder ./ --port 5000 --cors"
   }
 }
