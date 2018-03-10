@@ -144,7 +144,7 @@ flow.task("font:woff", ["font:ttf"], function (done) {
 });
 
 //Build font in woff2 format
-flow.task("font:woff2", ["font:woff2"], function (done) {
+flow.task("font:woff2", ["font:ttf"], function (done) {
     let input = fs.readFileSync(paths.ttfFont);
     let ttf = new Uint8Array(input);
     flow.log("Saving woff2 font as " + paths.woff2Font);
