@@ -8,6 +8,6 @@
 
 //Get an icon by name
 @function siimple-icon($icon) {
-  $value: map-get($siimple-icons, "#{$icon}");
-  @return unquote("\"") + unquote(str-insert($value, "\\", 1)) + unquote("\"");
+    $value: map-get($siimple-icons, "#{$icon}");
+    @return unquote("\"") + unquote(str-insert($value, "\\", 1)) + unquote("\"");
 }
