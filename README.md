@@ -28,7 +28,7 @@ dist
 ```
 
 - A file called `siimple-icons.css`. It contains all styles that you will need when using **siimple-icons**.
-- A folder called `fonts`. It contains all of the typeface files used by `siimple-icons.css` to display the icons.
+- A folder called `fonts`. It contains all of the typeface files used by `siimple-icons.css`.
 - A file called `siimple-icons.svg`. Is a SVG sprite with all the icons.
 
 
@@ -72,26 +72,35 @@ You can style your icons adding a `style` attribute or adding an additional clas
 
 ### Using the SVG sprite
 
-The svg sprite is placed in `dist` with the name `siimple-icons.svg`. Each icon is saved with an ID, extracted from the icon file name (without the `.svg` extension). For example, the icon `src/arrow-up.svg` is saved in the sprite with the ID `arrow-up`.  
+You should copy `siimple-icons.svg` into the assets folder of your project. Now, in your HTMl document where you are going to use an icon, create a `<svg>` element and add the following information to it:
 
-You can use all the icons in the sprite adding the following HTML code to your web page:
+- Add `viewbox="0 0 48 48"` attribute.
+- **Optionally** add a `class` attrbitue with the class (or classes) used to style your icon. See the example below.
+- As a children of the `<svg>` tag, add a `<use>` tag with a refenrece to the sprites file and the icon that you are going to use.
+
+For example, if your `siimple-icons.svg` file is placed on the `assets` folder, you can use the `settings` icon adding the following HTML code: 
 
 ```html
-<svg viewBox="0 0 48 48" class="icon">
-    <use xlink:href="path/to/siimple-icons/dist/siimple-icons.svg#ICON"></use>
+<svg viewbox="0 0 48 48">
+    <use xlink:href="./assets/siimple-icons.svg#settings"></use>
 </svg>
 ```
 
-Where `ICON` is the ID of the wanted icon. You can use CSS to change the width, height and color of the icon: 
+You can also style your icon adding a class to the parent `<svg>` tag with your custom styles:
 
 ```html
+<!-- Your custom icon style -->
 <style>
-    .icon {
+    .red-arrow {
         width: 100px;
         height: 100px;
-        fill: #15b7a1;
+        fill: #f44242
     }
 </style>
+
+<svg viewbox="0 0 48 48" class="red-arrow">
+    <use xlink:href="./assets/siimple-icons.svg#arrow-left"></use>
+</svg>
 ```
 
 ## Build instructions
