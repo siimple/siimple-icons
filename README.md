@@ -61,7 +61,7 @@ You can style your icons adding a `style` attribute or adding an additional clas
 <!-- Style your icon -->
 <style>
     .yellow-star {
-        color: ##ffea66;
+        color: #ffea66;
         font-size: 20px;
     }
 </style>
