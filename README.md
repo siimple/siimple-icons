@@ -5,14 +5,18 @@
 
 ## Installation 
 
-Use [bower](https://bower.io) to install the latest version of **siimple-icons**:
+Use [npm](https://npmjs.com) to install the latest version of **siimple-icons**:
 
 ```
-bower install siimple-icons --save
+npm install siimple-icons --save
 ```
 
 
 ## Usage
+
+### Using the SVG font
+
+
 
 ### Using the SVG sprite
 
