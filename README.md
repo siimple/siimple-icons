@@ -76,7 +76,7 @@ You should copy `siimple-icons.svg` into the assets folder of your project. Now,
 
 - Add a `viewbox="0 0 48 48"` attribute.
 - **Optionally** add a `class` attrbitue with the class (or classes) used to style your icon. See the example below.
-- As a children of the `<svg>` tag, add a `<use>` tag with a reference to the sprites file and the icon that you are going to use.
+- Add a `<use>` tag as a children with a reference to the sprites file and the icon that you are going to use.
 
 For example, if your `siimple-icons.svg` file is placed on the `assets` folder, you can use the `settings` icon adding the following HTML code: 
 
