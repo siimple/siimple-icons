@@ -36,27 +36,12 @@ flow.task("unicode:read", function (done) {
 
 //Unicode write task
 flow.task("unicode:write", function (done) {
-    let endl = "\n";
-    let tab = "  ";
-    //Initialize the writable stream
-    let writable = fs.createWriteStream(iconsFile, {encoding: "utf8"});
-    writable.on("finish", function () {
-        return done();
+    //Convert the icons list to string
+    let content = JSON.stringify(icons, null, 4);
+    //Write to the JSON file
+    fs.writeFile(iconsFile, content, "utf8", function (error) {
+        return done(error);
     });
-    writable.write("[" + endl);
-    // For each file in the list
-    icons.forEach(function (icon, index) {
-        // Check if the icon is not the first icon in the list to add the comma at
-        // the end of the las icon
-        if (index > 0) {
-            //Add the comma and a new line break
-            writable.write("," + endl);
-        }
-        //Write the icon information
-        writable.write(tab + "{\"unicode\": " + icon.unicode + ", \"id\": \"" + icon.id + "\"}");
-    });
-    //Finish the icons JSON file
-    writable.end(endl + "]" + endl);
 });
 
 //Tasks to run
