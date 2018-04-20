@@ -16,15 +16,25 @@ npm install siimple-icons --save
 
 If you take a look at the `dist` folder, you can see the following entries: 
 
+```
+dist
+├── fonts
+│   ├── siimple-icons.font.svg
+│   ├── siimple-icons.font.ttf
+│   ├── siimple-icons.font.woff
+│   └── siimple-icons.font.woff2
+├── siimple-icons.css
+└── siimple-icons.svg
+```
+
 - A file called `siimple-icons.css`. It contains all styles that you will need when using **siimple-icons**.
-- A file called `siimple-icons.min.css`. Is the same as the previous file but minified.
 - A folder called `fonts`. It contains all of the typeface files used by `siimple-icons.css` and `siimple-icons.min.css` to display the icons.
 - A file called `siimple-icons.svg`. Is a SVG sprite with all the icons.
 
 
 ### Using the CSS styles
 
-You should copy `siimple-icons.css` (or `siimple-icons.min.css` if you are going to use the minified version) and the `fonts` folder into the assets folder of your project. 
+You should copy `siimple-icons.css` and the `fonts` folder into the assets folder of your project. 
 
 
 ### Using the SVG sprite
