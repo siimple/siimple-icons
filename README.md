@@ -34,7 +34,40 @@ dist
 
 ### Using the CSS styles
 
-You should copy `siimple-icons.css` and the `fonts` folder into the assets folder of your project. 
+You should copy `siimple-icons.css` and the `fonts` folder into the assets folder of your project. Now, add a reference to `siimple-icons.css` in the `<head>` tag of each HTML file where you are going to use **siimple-icons**: 
+
+```html
+<link rel="stylesheet" href="./assets/siimple-icons.css">
+```
+
+Remember that you should change the path `./assets/siimple-icons.css` used in the previous example with the correct path where you have copied the `siimple-icons.css` file and the `fonts` folder in your project. 
+
+To use the icons in the `<body>` tag of your HTML file, first create a `<span>` tag with the following classes: 
+
+- `si`: is the base class for **siimple-icons**.
+- `si-[ICON]`, where `[ICON]` is the name of the icon that you are going to add.  
+
+```html 
+<!-- Add a left arrow icon -->
+<span class="si si-arrow-left"></span>
+
+<!-- Add a star icon -->
+<span class="si si-star"></span>
+```
+
+You can style your icons adding a `style` attribute or adding an additional class with your custom styles: 
+
+```html 
+<!-- Style your icon -->
+<style>
+    .yellow-star {
+        color: ##ffea66;
+        font-size: 20px;
+    }
+</style>
+
+<span class="si si-star yellow-star"></span>
+```
 
 
 ### Using the SVG sprite
