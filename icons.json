@@ -1,33 +1,362 @@
 [
-  { "unicode": 57344, "id": "alert-done" },
-  { "unicode": 57345, "id": "alert-error" },
-  { "unicode": 57346, "id": "alert-info" },
-  { "unicode": 57347, "id": "alert-warning" },
-  { "unicode": 57348, "id": "arrow-down" },
-  { "unicode": 57349, "id": "arrow-left" },
-  { "unicode": 57350, "id": "arrow-right" },
-  { "unicode": 57351, "id": "arrow-up" },
-  { "unicode": 57352, "id": "check" },
-  { "unicode": 57353, "id": "chevron-down" },
-  { "unicode": 57354, "id": "chevron-left" },
-  { "unicode": 57355, "id": "chevron-right" },
-  { "unicode": 57356, "id": "chevron-up" },
-  { "unicode": 57357, "id": "close" },
-  { "unicode": 57358, "id": "file-empty" },
-  { "unicode": 57359, "id": "file" },
-  { "unicode": 57360, "id": "folder" },
-  { "unicode": 57361, "id": "home" },
-  { "unicode": 57362, "id": "list" },
-  { "unicode": 57363, "id": "menu" },
-  { "unicode": 57364, "id": "minus" },
-  { "unicode": 57365, "id": "plus" },
-  { "unicode": 57366, "id": "processing" },
-  { "unicode": 57367, "id": "search" },
-  { "unicode": 57368, "id": "settings" },
-  { "unicode": 57369, "id": "star" },
-  { "unicode": 57370, "id": "time" },
-  { "unicode": 57371, "id": "trash" },
-  { "unicode": 57372, "id": "zoom-in" },
-  { "unicode": 57373, "id": "zoom-out" },
-  { "unicode": 57374, "id": "edit" }
+    {
+        "id": "arrow-down",
+        "path": "svg/arrow-down.svg",
+        "unicode": 57344,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "arrow-left",
+        "path": "svg/arrow-left.svg",
+        "unicode": 57345,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "arrow-right",
+        "path": "svg/arrow-right.svg",
+        "unicode": 57346,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "arrow-up",
+        "path": "svg/arrow-up.svg",
+        "unicode": 57347,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "arrows",
+        "path": "svg/arrows.svg",
+        "unicode": 57348,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "check-circle",
+        "path": "svg/check-circle.svg",
+        "unicode": 57349,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "check",
+        "path": "svg/check.svg",
+        "unicode": 57350,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "chevron-circle-down",
+        "path": "svg/chevron-circle-down.svg",
+        "unicode": 57351,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "chevron-circle-left",
+        "path": "svg/chevron-circle-left.svg",
+        "unicode": 57352,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "chevron-circle-right",
+        "path": "svg/chevron-circle-right.svg",
+        "unicode": 57353,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "chevron-circle-up",
+        "path": "svg/chevron-circle-up.svg",
+        "unicode": 57354,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "chevron-down",
+        "path": "svg/chevron-down.svg",
+        "unicode": 57355,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "chevron-left",
+        "path": "svg/chevron-left.svg",
+        "unicode": 57356,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "chevron-right",
+        "path": "svg/chevron-right.svg",
+        "unicode": 57357,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "chevron-up",
+        "path": "svg/chevron-up.svg",
+        "unicode": 57358,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "cloud-download",
+        "path": "svg/cloud-download.svg",
+        "unicode": 57359,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "cloud-upload",
+        "path": "svg/cloud-upload.svg",
+        "unicode": 57360,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "cloud",
+        "path": "svg/cloud.svg",
+        "unicode": 57361,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "cross-circle",
+        "path": "svg/cross-circle.svg",
+        "unicode": 57362,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "cross",
+        "path": "svg/cross.svg",
+        "unicode": 57363,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "edit",
+        "path": "svg/edit.svg",
+        "unicode": 57364,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "exclamation-circle",
+        "path": "svg/exclamation-circle.svg",
+        "unicode": 57365,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "exclamation",
+        "path": "svg/exclamation.svg",
+        "unicode": 57366,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "expand",
+        "path": "svg/expand.svg",
+        "unicode": 57367,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "file-empty",
+        "path": "svg/file-empty.svg",
+        "unicode": 57368,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "file",
+        "path": "svg/file.svg",
+        "unicode": 57369,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "flask",
+        "path": "svg/flask.svg",
+        "unicode": 57370,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "folder",
+        "path": "svg/folder.svg",
+        "unicode": 57371,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "heart",
+        "path": "svg/heart.svg",
+        "unicode": 57372,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "home",
+        "path": "svg/home.svg",
+        "unicode": 57373,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "info-circle",
+        "path": "svg/info-circle.svg",
+        "unicode": 57374,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "info",
+        "path": "svg/info.svg",
+        "unicode": 57375,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "list",
+        "path": "svg/list.svg",
+        "unicode": 57376,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "location",
+        "path": "svg/location.svg",
+        "unicode": 57377,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "lock",
+        "path": "svg/lock.svg",
+        "unicode": 57378,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "menu",
+        "path": "svg/menu.svg",
+        "unicode": 57379,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "minus-circle",
+        "path": "svg/minus-circle.svg",
+        "unicode": 57380,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "minus",
+        "path": "svg/minus.svg",
+        "unicode": 57381,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "plus-circle",
+        "path": "svg/plus-circle.svg",
+        "unicode": 57382,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "plus",
+        "path": "svg/plus.svg",
+        "unicode": 57383,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "processing",
+        "path": "svg/processing.svg",
+        "unicode": 57384,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "question-circle",
+        "path": "svg/question-circle.svg",
+        "unicode": 57385,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "question",
+        "path": "svg/question.svg",
+        "unicode": 57386,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "redo",
+        "path": "svg/redo.svg",
+        "unicode": 57387,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "resize",
+        "path": "svg/resize.svg",
+        "unicode": 57388,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "search",
+        "path": "svg/search.svg",
+        "unicode": 57389,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "settings",
+        "path": "svg/settings.svg",
+        "unicode": 57390,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "star",
+        "path": "svg/star.svg",
+        "unicode": 57391,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "time",
+        "path": "svg/time.svg",
+        "unicode": 57392,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "trash",
+        "path": "svg/trash.svg",
+        "unicode": 57393,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "undo",
+        "path": "svg/undo.svg",
+        "unicode": 57394,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "unlock",
+        "path": "svg/unlock.svg",
+        "unicode": 57395,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "user-add",
+        "path": "svg/user-add.svg",
+        "unicode": 57396,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "user-delete",
+        "path": "svg/user-delete.svg",
+        "unicode": 57397,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "user",
+        "path": "svg/user.svg",
+        "unicode": 57398,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "volume-down",
+        "path": "svg/volume-down.svg",
+        "unicode": 57399,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "volume-mute",
+        "path": "svg/volume-mute.svg",
+        "unicode": 57400,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "volume-up",
+        "path": "svg/volume-up.svg",
+        "unicode": 57401,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "zoom-in",
+        "path": "svg/zoom-in.svg",
+        "unicode": 57402,
+        "since": "v0.0.1"
+    },
+    {
+        "id": "zoom-out",
+        "path": "svg/zoom-out.svg",
+        "unicode": 57403,
+        "since": "v0.0.1"
+    }
 ]
