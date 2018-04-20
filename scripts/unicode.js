@@ -18,10 +18,12 @@ flow.task("unicode:read", function (done) {
         files.forEach(function (file) {
             // Check if the file has svg extension
             if (path.extname(file) === ".svg") {
-                let icon = {};
-                icon.id = path.basename(file, ".svg");
-                icon.path = path.join(iconsFolder, file);
-                icon.unicode = iconUnicode;
+                let icon = {
+                    "id": path.basename(file, ".svg"),
+                    "path": path.join(iconsFolder, file),
+                    "unicode": iconUnicode,
+                    "since": "v0.0.1"
+                };
                 icons.push(icon);
                 //Increment the unicode counter
                 iconUnicode = iconUnicode + 1;
