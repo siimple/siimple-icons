@@ -28,7 +28,7 @@ dist
 ```
 
 - A file called `siimple-icons.css`. It contains all styles that you will need when using **siimple-icons**.
-- A folder called `fonts`. It contains all of the typeface files used by `siimple-icons.css` and `siimple-icons.min.css` to display the icons.
+- A folder called `fonts`. It contains all of the typeface files used by `siimple-icons.css` to display the icons.
 - A file called `siimple-icons.svg`. Is a SVG sprite with all the icons.
 
 
