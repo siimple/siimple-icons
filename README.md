@@ -74,9 +74,9 @@ You can style your icons adding a `style` attribute or adding an additional clas
 
 You should copy `siimple-icons.svg` into the assets folder of your project. Now, in your HTMl document where you are going to use an icon, create a `<svg>` element and add the following information to it:
 
-- Add `viewbox="0 0 48 48"` attribute.
+- Add a `viewbox="0 0 48 48"` attribute.
 - **Optionally** add a `class` attrbitue with the class (or classes) used to style your icon. See the example below.
-- As a children of the `<svg>` tag, add a `<use>` tag with a refenrece to the sprites file and the icon that you are going to use.
+- As a children of the `<svg>` tag, add a `<use>` tag with a reference to the sprites file and the icon that you are going to use.
 
 For example, if your `siimple-icons.svg` file is placed on the `assets` folder, you can use the `settings` icon adding the following HTML code: 
 
