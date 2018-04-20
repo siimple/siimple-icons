@@ -22,3 +22,12 @@
     fill: #ffffff;
 }
 
+.icon .icon-font {
+    font-size: 35px;
+    color: #546778;
+}
+
+.icon:hover .icon-font {
+    color: #ffffff;
+}
+
