@@ -26,7 +26,7 @@ You can use all the icons in the sprite adding the following HTML code to your w
 
 ```html
 <svg viewBox="0 0 48 48" class="icon">
-  <use xlink:href="path/to/siimple-icons/dist/siimple-icons.svg#ICON"></use>
+    <use xlink:href="path/to/siimple-icons/dist/siimple-icons.svg#ICON"></use>
 </svg>
 ```
 
@@ -34,12 +34,11 @@ Where `ICON` is the ID of the wanted icon. You can use CSS to change the width, 
 
 ```html
 <style>
-  .icon 
-  {
-    width: 100px;
-    height: 100px;
-    fill: #15b7a1;
-  }
+    .icon {
+        width: 100px;
+        height: 100px;
+        fill: #15b7a1;
+    }
 </style>
 ```
 
@@ -72,3 +71,4 @@ This will generate a file called `siimple-icons.svg` on the `dist` folder.
 ## License 
 
 All the icons in **siimple-icons** are under the [MIT](./LICENSE) license. &copy; The **siimple team**.
+
