@@ -7,8 +7,8 @@ let iconsFolder = "./svg/";
 let iconsFile = "./icons.json";
 let unicodeStart = 57344;
 
-//Unicode read task
-flow.task("unicode:read", function (done) {
+//Init read task
+flow.task("init:read", function (done) {
     return fs.readdir(iconsFolder, function (error, files) {
         if (error) {
             return done(error);
@@ -34,8 +34,8 @@ flow.task("unicode:read", function (done) {
     });
 });
 
-//Unicode write task
-flow.task("unicode:write", function (done) {
+//Init write task
+flow.task("init:write", function (done) {
     //Convert the icons list to string
     let content = JSON.stringify(icons, null, 4);
     //Write to the JSON file
@@ -45,5 +45,5 @@ flow.task("unicode:write", function (done) {
 });
 
 //Tasks to run
-flow.defaultTask(["unicode:read", "unicode:write"]);
+flow.defaultTask(["init:read", "init:write"]);
 
