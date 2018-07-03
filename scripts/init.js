@@ -1,49 +1,42 @@
 let fs = require("fs");
 let path = require("path");
-let flow = require("tinyflow");
 
-let icons = [];
+//Global configuration
 let iconsFolder = "./svg/";
 let iconsFile = "./icons.json";
 let unicodeStart = 57344;
 
-//Init read task
-flow.task("init:read", function (done) {
-    return fs.readdir(iconsFolder, function (error, files) {
-        if (error) {
-            return done(error);
+//Read the icons folder
+fs.readdir(iconsFolder, function (error, files) {
+    if (error) {
+        throw error;
+    }
+    let icons = [];
+    let iconUnicode = unicodeStart;
+    // For each file in the list
+    files.forEach(function (file) {
+        // Check if the file has svg extension
+        if (path.extname(file) === ".svg") {
+            let icon = {
+                "id": path.basename(file, ".svg"),
+                "path": path.join(iconsFolder, file),
+                "unicode": iconUnicode,
+                "since": "v0.0.1"
+            };
+            icons.push(icon);
+            //Increment the unicode counter
+            iconUnicode = iconUnicode + 1;
         }
-        let iconUnicode = unicodeStart;
-        // For each file in the list
-        files.forEach(function (file) {
-            // Check if the file has svg extension
-            if (path.extname(file) === ".svg") {
-                let icon = {
-                    "id": path.basename(file, ".svg"),
-                    "path": path.join(iconsFolder, file),
-                    "unicode": iconUnicode,
-                    "since": "v0.0.1"
-                };
-                icons.push(icon);
-                //Increment the unicode counter
-                iconUnicode = iconUnicode + 1;
-            }
-        });
-        //Task finished
-        return done();
     });
-});
-
-//Init write task
-flow.task("init:write", function (done) {
-    //Convert the icons list to string
+   //Convert the icons list to string
     let content = JSON.stringify(icons, null, 4);
     //Write to the JSON file
-    fs.writeFile(iconsFile, content, "utf8", function (error) {
-        return done(error);
-    });
+    return fs.writeFile(iconsFile, content, "utf8", function (error) {
+        if (error) {
+            throw error;
+        }
+        //Display finish message
+        console.log("Init finished");
+    }); 
 });
-
-//Tasks to run
-flow.defaultTask(["init:read", "init:write"]);
 
