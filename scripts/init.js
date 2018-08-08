@@ -6,12 +6,9 @@ process.nextTick(function () {
     let iconsFolder = "./svg/";
     let iconsFile = "./icons.json";
     let unicodeStart = 57344;
-    //Read the icons folder
-    return fs.readdir(iconsFolder, function (error, files) {
-        if (error) {
-            process.stderr.write("ERROR: " + error.message);
-            return process.exit(1);
-        }
+    try {
+        //Read the icons folder
+        let files = fs.readdirSync(iconsFolder);
         let icons = [];
         let iconUnicode = unicodeStart;
         // For each file in the list
@@ -20,7 +17,7 @@ process.nextTick(function () {
             if (path.extname(file) === ".svg") {
                 let icon = {
                     "id": path.basename(file, ".svg"),
-                    "path": path.join(iconsFolder, file),
+                    //"path": path.join(iconsFolder, file),
                     "unicode": iconUnicode,
                     "added": "v0.0.1",
                     "updated": "v0.0.1"
@@ -33,13 +30,12 @@ process.nextTick(function () {
         //Convert the icons list to string
         let content = JSON.stringify(icons, null, 4);
         //Write to the JSON file
-        return fs.writeFile(iconsFile, content, "utf8", function (error) {
-            if (error) {
-                process.stderr.write("ERROR: " + error.message);
-                return process.exit(1);
-            }
-            return process.exit(0);
-        }); 
-    });
+        fs.writeFileSync(iconsFile, content, "utf8"); 
+    }
+    catch (error) {
+        process.stderr.write("ERROR: " + error.message);
+        return process.exit(1);
+    }
+    return process.exit(0);
 });
 
