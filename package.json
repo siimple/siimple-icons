@@ -4,7 +4,9 @@
     "description": "A suite of scalable icons for web, desktop and mobile projects",
     "author": "Josemi Juanes <josemijuanes@gmail.com>",
     "license": "MIT",
+    "homepage": "https://plugins.siimple.xyz/icons",
     "repository": "https://github.com/siimple/siimple-icons",
+    "bugs": "https://github.com/siimple/siimple-icons/issues",
     "dependencies": {},
     "devDependencies": {
         "get-args": "^2.0.0",
