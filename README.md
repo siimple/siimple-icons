@@ -17,13 +17,15 @@ npm install siimple-icons --save
 If you take a look at the `dist` folder, you can see the following entries: 
 
 ```
-dist
+dist/
 ├── fonts
 │   ├── siimple-icons.font.svg
 │   ├── siimple-icons.font.ttf
 │   ├── siimple-icons.font.woff
 │   └── siimple-icons.font.woff2
 ├── siimple-icons.css
+├── siimple-icons.css.map
+├── siimple-icons.min.css
 └── siimple-icons.svg
 ```
 
