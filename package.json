@@ -4,28 +4,24 @@
     "description": "A suite of scalable icons for web, desktop and mobile projects",
     "author": "Josemi Juanes <josemijuanes@gmail.com>",
     "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/siimple/siimple-icons"
-    },
+    "repository": "https://github.com/siimple/siimple-icons",
     "dependencies": {},
     "devDependencies": {
-        "rmr": "^0.1.0",
+        "get-args": "^2.0.0",
+        "clean-css-cli": "^4.2.1",
+        "postcss-cli": "^6.0.0",
+        "autoprefixer": "^9.1.0",
         "svgicons2svgfont": "^9.0.2",
         "stattic": "^0.3.2",
-        "kofi": "^0.1.2",
-        "keue": "^0.3.0",
-        "time-stamp": "^2.0.0",
         "handlebars": "^4.0.11",
         "glob": "^7.1.2",
-        "mkdirp": "^0.5.1",
-        "node-sass": "^4.7.2",
+        "sass": "^1.8.0",
+        "sass-lint": "^1.12.1",
         "svgo": "^1.0.5",
         "svgstore": "^2.0.3",
         "svg2ttf": "^4.1.0",
         "ttf2woff": "^2.0.1",
-        "ttf2woff2": "^2.0.3",
-        "tinyflow": "^0.0.3"
+        "ttf2woff2": "^2.0.3"
     },
     "scripts": {
         "build": "node ./scripts/build.js",
