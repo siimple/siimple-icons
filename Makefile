@@ -32,6 +32,7 @@ build:
 	${NODE_BIN}/postcss --use autoprefixer --config ./postcss.config.js --map false --output ${OUTPUT_CSS} ${OUTPUT_CSS}
 	${NODE_BIN}/cleancss --compatibility "*" --level 2 --output ${OUTPUT_CSS_MIN} ${OUTPUT_CSS}
 	@logger -s "Generating SVG sprites"
+	node ./scripts/build-svg-sprites.js --output ${OUTPUT_SVG}
 	@logger -s "Build finished"
 
 # Compile the templates
