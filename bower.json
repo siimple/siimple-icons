@@ -1,24 +1,11 @@
 {
-  "name": "siimple-icons",
-  "author": "Josemi Juanes <josemijuanes@gmail.com>",
-  "homepage": "https://www.siimple.xyz",
-  "ignore": [
-    "package.json",
-    "**/.*"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/siimple/siimple-icons.git"
-  },
-  "license": "MIT",
-  "keywords": [
-    "siimple",
-    "icons",
-    "svg",
-    "svg-icons"
-  ],
-  "devDependencies": {
-    "siimple": "siimple/siimple#master",
-    "siimple-colors": "siimple/siimple-colors#master"
-  }
+    "name": "siimple-icons",
+    "author": "Josemi Juanes <josemijuanes@gmail.com>",
+    "homepage": "https://www.siimple.xyz",
+    "repository": "https://github.com/siimple/siimple-icons.git",
+    "license": "MIT",
+    "devDependencies": {
+        "siimple": "siimple/siimple#v3.1.1",
+        "siimple-colors": "siimple/siimple-colors#develop"
+    }
 }
