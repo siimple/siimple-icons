@@ -23,7 +23,7 @@
         "svgstore": "^2.0.3",
         "svg2ttf": "^4.1.0",
         "ttf2woff": "^2.0.1",
-        "ttf2woff2": "^2.0.3"
+        "wawoff2": "^1.0.2"
     },
     "scripts": {
         "build": "node ./scripts/build.js",
