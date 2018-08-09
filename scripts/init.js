@@ -20,7 +20,8 @@ process.nextTick(function () {
                     //"path": path.join(iconsFolder, file),
                     "unicode": iconUnicode,
                     "added": "v0.0.1",
-                    "updated": "v0.0.1"
+                    "updated": "v0.0.1",
+                    "keywords": []
                 };
                 icons.push(icon);
                 //Increment the unicode counter
