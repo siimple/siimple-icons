@@ -36,7 +36,11 @@ build:
 	@logger -s "Generating SVG font"
 	node ./scripts/build-svg-font.js --output ${OUTPUT_FONTS_SVG}
 	@logger -s "Generating TTF font"
-	${NODE_BIN}/svg2ttf -c "The siimple team" ${OUTPUT_FONTS_SVG} ${OUTPUT_FONTS_TTF}
+	${NODE_BIN}/svg2ttf ${OUTPUT_FONTS_SVG} ${OUTPUT_FONTS_TTF}
+	@logger -s "Generating WOFF font"
+	${NODE_BIN}/ttf2woff ${OUTPUT_FONTS_TTF} ${OUTPUT_FONTS_WOFF}
+	@logger -s "Generating WOFF2 font"
+	${NODE_BIN}/woff2_compress.js ${OUTPUT_FONTS_TTF} ${OUTPUT_FONTS_WOFF2}
 	@logger -s "Build finished"
 
 # Compile the templates
