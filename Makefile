@@ -35,6 +35,8 @@ build:
 	node ./scripts/build-svg-sprites.js --output ${OUTPUT_SVG}
 	@logger -s "Generating SVG font"
 	node ./scripts/build-svg-font.js --output ${OUTPUT_FONTS_SVG}
+	@logger -s "Generating TTF font"
+	${NODE_BIN}/svg2ttf -c "The siimple team" ${OUTPUT_FONTS_SVG} ${OUTPUT_FONTS_TTF}
 	@logger -s "Build finished"
 
 # Compile the templates
