@@ -11,11 +11,11 @@
 
 //Font face
 @font-face {
-    font-family: 'SiimpleIcons';
-    src: url('./fonts/siimple-icons.font.ttf') format('truetype'),
-    url('./fonts/siimple-icons.font.woff') format('woff'),
-    url('./fonts/siimple-icons.font.woff2') format('woff2'),
-    url('./fonts/siimple-icons.font.svg') format('svg');
+    font-family: "SiimpleIcons";
+    src: url("./fonts/siimple-icons.font.ttf") format("truetype"),
+    url("./fonts/siimple-icons.font.woff") format("woff"),
+    url("./fonts/siimple-icons.font.woff2") format("woff2"),
+    url("./fonts/siimple-icons.font.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -23,7 +23,7 @@
 //Icon class
 .si {
     display: inline-block;
-    font-family: 'SiimpleIcons';
+    font-family: "SiimpleIcons";
     font-size: 14px;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
