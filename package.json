@@ -9,6 +9,8 @@
     "bugs": "https://github.com/siimple/siimple-icons/issues",
     "dependencies": {},
     "devDependencies": {
+        "react": "^16.4.2",
+        "react-dom": "^16.4.2",
         "get-args": "^2.0.0",
         "clean-css-cli": "^4.2.1",
         "postcss-cli": "^6.0.0",
