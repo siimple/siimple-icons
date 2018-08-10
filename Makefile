@@ -1,4 +1,4 @@
-.PHONY: build templates
+.PHONY: build templates docs
 
 # Node binaries path
 NODE_BIN=./node_modules/.bin
@@ -47,4 +47,21 @@ build:
 templates: 
 	node ./scripts/templates.js --source scss
 	node ./scripts/templates.js --source test
+
+# Build docs
+docs: 
+	@logger -s "Docs build started"
+	@logger -s "Building documentation site with Jekyll"
+	cd ./docs && jekyll build
+	@logger -s "Copying assets files"
+	cp ./bower_components/siimple/dist/siimple.min.css ./docs/_site/assets/css/
+	cp ./dist/siimple-icons.min.css ./docs/_site/assets/css/
+	cp -R ./dist/fonts ./docs/_site/assets/css/
+	cp ./icons.json ./docs/_site/assets/
+	@logger -s "Docs build finished"
+
+# Serve documentation
+docs-serve:
+	${NODE_BIN}/stattic --folder ./docs/_site/ --port 5000 --cors
+
 
