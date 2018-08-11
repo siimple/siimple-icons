@@ -20,13 +20,18 @@ header.push("// You can generate this file running the following command from th
 header.push("// $ make templates");
 header.push("//");
 
+//Exit with error
+let exitWithError = function (error) {
+    process.stderr.write(error.message);
+    return process.exit(1);
+};
+
 //Function to compile the templates
 process.nextTick(function () {
     return glob("./templates/" + opt.source + "/*.hbs", function(error, files){
         if(error) {
-            return done(error);
+            return exitWithError(error);
         }
-        flow.log("Compiling " + files.length + " files");
         let data = {icons: icons, header: header.join("\n")};
         for (let i = 0; i < files.length; i++)  {
             let file = path.join(process.cwd(), files[i]);
@@ -42,8 +47,7 @@ process.nextTick(function () {
                 fs.writeFileSync(output, template(data), "utf8");
             }
             catch (error) {
-                process.stderr.write("ERROR: " + error.message);
-                return process.exit(1);
+                return exitWithError(error);
             }
         }
         //Compile finished
