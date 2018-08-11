@@ -28,21 +28,21 @@ let exitWithError = function (error) {
 
 //Function to compile the templates
 process.nextTick(function () {
-    return glob("./templates/" + opt.source + "/*.hbs", function(error, files){
+    return glob("./templates/" + opt.source + "/*.hbs", function (error, files) {
         if(error) {
             return exitWithError(error);
         }
-        let data = {icons: icons, header: header.join("\n")};
+        let data = {"icons": icons, "header": header.join("\n")};
         for (let i = 0; i < files.length; i++)  {
             let file = path.join(process.cwd(), files[i]);
             let fileObject = path.parse(file);
-            process.stdout.write("Compiling file " + file);
+            process.stdout.write("Compiling file " + file + "\n");
             //Read the file content
             try {
                 let content = fs.readFileSync(file, "utf8");
                 let template = handlebars.compile(content);
                 //Output file path
-                let outputDir = path.join(process.cwd(), folder);
+                let outputDir = path.join(process.cwd(), opt.source);
                 let output = path.format({dir: outputDir, name: fileObject.name, ext: ""});
                 fs.writeFileSync(output, template(data), "utf8");
             }
