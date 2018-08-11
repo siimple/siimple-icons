@@ -25,10 +25,14 @@
     display: inline-block;
     font-family: "SiimpleIcons";
     font-size: 14px;
+    font-style: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
+    &::before {
+        box-sizing: inherit;
+    }
+    //For each icon in the list
     @each $icon, $unicode in $siimple-icons {
         &-#{$icon}:before {
             content: siimple-icon($icon);
