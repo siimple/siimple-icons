@@ -54,6 +54,9 @@ docs:
 	@logger -s "Building documentation site with Jekyll"
 	cd ./docs && jekyll build
 	@logger -s "Copying assets files"
+	mkdir -p ./docs/_site/assets/js
+	cp ./node_modules/react/umd/react.production.min.js ./docs/_site/assets/js/
+	cp ./node_modules/react-dom/umd/react-dom.production.min.js ./docs/_site/assets/js/
 	cp ./bower_components/siimple/dist/siimple.min.css ./docs/_site/assets/css/
 	cp ./dist/siimple-icons.min.css ./docs/_site/assets/css/
 	cp -R ./dist/fonts ./docs/_site/assets/css/
