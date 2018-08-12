@@ -1,362 +1,458 @@
 [
     {
-        "id": "arrow-down",
-        "path": "svg/arrow-down.svg",
+        "id": "announcement",
         "unicode": 57344,
-        "since": "v0.0.1"
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["announcement", "notice", "bullhorn"]
+    },
+    {
+        "id": "arrow-down",
+        "unicode": 57345,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["arrow", "down"]
     },
     {
         "id": "arrow-left",
-        "path": "svg/arrow-left.svg",
-        "unicode": 57345,
-        "since": "v0.0.1"
+        "unicode": 57346,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["arrow", "left"]
     },
     {
         "id": "arrow-right",
-        "path": "svg/arrow-right.svg",
-        "unicode": 57346,
-        "since": "v0.0.1"
+        "unicode": 57347,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["arrow", "right"]
     },
     {
         "id": "arrow-up",
-        "path": "svg/arrow-up.svg",
-        "unicode": 57347,
-        "since": "v0.0.1"
+        "unicode": 57348,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["arrow", "up"]
     },
     {
         "id": "arrows",
-        "path": "svg/arrows.svg",
-        "unicode": 57348,
-        "since": "v0.0.1"
+        "unicode": 57349,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["arrow", "move"]
+    },
+    {
+        "id": "box",
+        "unicode": 57350,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["box", "paper", "container"]
     },
     {
         "id": "check-circle",
-        "path": "svg/check-circle.svg",
-        "unicode": 57349,
-        "since": "v0.0.1"
+        "unicode": 57351,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["check", "mark", "done", "accept", "circle"]
     },
     {
         "id": "check",
-        "path": "svg/check.svg",
-        "unicode": 57350,
-        "since": "v0.0.1"
+        "unicode": 57352,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["check", "mark", "done", "accept"]
     },
     {
         "id": "chevron-circle-down",
-        "path": "svg/chevron-circle-down.svg",
-        "unicode": 57351,
-        "since": "v0.0.1"
+        "unicode": 57353,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["arrow", "circle", "chevron", "down"]
     },
     {
         "id": "chevron-circle-left",
-        "path": "svg/chevron-circle-left.svg",
-        "unicode": 57352,
-        "since": "v0.0.1"
+        "unicode": 57354,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["arrow", "circle", "chevron", "left"]
     },
     {
         "id": "chevron-circle-right",
-        "path": "svg/chevron-circle-right.svg",
-        "unicode": 57353,
-        "since": "v0.0.1"
+        "unicode": 57355,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["arrow", "circle", "chevron", "right"]
     },
     {
         "id": "chevron-circle-up",
-        "path": "svg/chevron-circle-up.svg",
-        "unicode": 57354,
-        "since": "v0.0.1"
+        "unicode": 57356,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["arrow", "chevron", "up", "circle"]
     },
     {
         "id": "chevron-down",
-        "path": "svg/chevron-down.svg",
-        "unicode": 57355,
-        "since": "v0.0.1"
+        "unicode": 57357,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["arrow", "chevron", "down"]
     },
     {
         "id": "chevron-left",
-        "path": "svg/chevron-left.svg",
-        "unicode": 57356,
-        "since": "v0.0.1"
+        "unicode": 57358,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["arrow", "chevron", "left"]
     },
     {
         "id": "chevron-right",
-        "path": "svg/chevron-right.svg",
-        "unicode": 57357,
-        "since": "v0.0.1"
+        "unicode": 57359,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["arrow", "chevron", "right"]
     },
     {
         "id": "chevron-up",
-        "path": "svg/chevron-up.svg",
-        "unicode": 57358,
-        "since": "v0.0.1"
+        "unicode": 57360,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["arrow", "chevron", "up"]
     },
     {
         "id": "cloud-download",
-        "path": "svg/cloud-download.svg",
-        "unicode": 57359,
-        "since": "v0.0.1"
+        "unicode": 57361,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["cloud", "download", "server"]
     },
     {
         "id": "cloud-upload",
-        "path": "svg/cloud-upload.svg",
-        "unicode": 57360,
-        "since": "v0.0.1"
+        "unicode": 57362,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["cloud", "upload", "server"]
     },
     {
         "id": "cloud",
-        "path": "svg/cloud.svg",
-        "unicode": 57361,
-        "since": "v0.0.1"
+        "unicode": 57363,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["cloud", "server"]
     },
     {
         "id": "cross-circle",
-        "path": "svg/cross-circle.svg",
-        "unicode": 57362,
-        "since": "v0.0.1"
+        "unicode": 57364,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["cross", "delete", "exit", "cancel", "close", "circle"]
     },
     {
         "id": "cross",
-        "path": "svg/cross.svg",
-        "unicode": 57363,
-        "since": "v0.0.1"
+        "unicode": 57365,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["cross", "delete", "exit", "cancel", "close"]
     },
     {
         "id": "edit",
-        "path": "svg/edit.svg",
-        "unicode": 57364,
-        "since": "v0.0.1"
+        "unicode": 57366,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["edit", "write", "pen", "pencil"]
     },
     {
         "id": "exclamation-circle",
-        "path": "svg/exclamation-circle.svg",
-        "unicode": 57365,
-        "since": "v0.0.1"
+        "unicode": 57367,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["exclamation", "mark", "circle", "notice", "circle"]
     },
     {
         "id": "exclamation",
-        "path": "svg/exclamation.svg",
-        "unicode": 57366,
-        "since": "v0.0.1"
+        "unicode": 57368,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["exclamation", "mark", "warning", "notice"]
     },
     {
         "id": "expand",
-        "path": "svg/expand.svg",
-        "unicode": 57367,
-        "since": "v0.0.1"
+        "unicode": 57369,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["expand", "resize"]
     },
     {
         "id": "file-empty",
-        "path": "svg/file-empty.svg",
-        "unicode": 57368,
-        "since": "v0.0.1"
+        "unicode": 57370,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["file", "empty", "archive", "blank"]
     },
     {
         "id": "file",
-        "path": "svg/file.svg",
-        "unicode": 57369,
-        "since": "v0.0.1"
+        "unicode": 57371,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["file", "filesystem", "archive"]
     },
     {
         "id": "flask",
-        "path": "svg/flask.svg",
-        "unicode": 57370,
-        "since": "v0.0.1"
+        "unicode": 57372,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["flask", "experiment", "laboratory", "science"]
     },
     {
         "id": "folder",
-        "path": "svg/folder.svg",
-        "unicode": 57371,
-        "since": "v0.0.1"
+        "unicode": 57373,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["folder", "file", "filesystem", "directory"]
     },
     {
         "id": "heart",
-        "path": "svg/heart.svg",
-        "unicode": 57372,
-        "since": "v0.0.1"
+        "unicode": 57374,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["heart", "love", "favourite"]
     },
     {
         "id": "home",
-        "path": "svg/home.svg",
-        "unicode": 57373,
-        "since": "v0.0.1"
+        "unicode": 57375,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["home", "house", "building"]
     },
     {
         "id": "info-circle",
-        "path": "svg/info-circle.svg",
-        "unicode": 57374,
-        "since": "v0.0.1"
+        "unicode": 57376,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["info", "circle"]
     },
     {
         "id": "info",
-        "path": "svg/info.svg",
-        "unicode": 57375,
-        "since": "v0.0.1"
+        "unicode": 57377,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["info"]
+    },
+    {
+        "id": "lightbulb",
+        "unicode": 57378,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["lightbulb", "light", "bulb", "illumination"]
     },
     {
         "id": "list",
-        "path": "svg/list.svg",
-        "unicode": 57376,
-        "since": "v0.0.1"
+        "unicode": 57379,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["list", "items", "ul"]
     },
     {
         "id": "location",
-        "path": "svg/location.svg",
-        "unicode": 57377,
-        "since": "v0.0.1"
+        "unicode": 57380,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["location", "position", "mark"]
     },
     {
         "id": "lock",
-        "path": "svg/lock.svg",
-        "unicode": 57378,
-        "since": "v0.0.1"
+        "unicode": 57381,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["lock", "security"]
     },
     {
         "id": "menu",
-        "path": "svg/menu.svg",
-        "unicode": 57379,
-        "since": "v0.0.1"
+        "unicode": 57382,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["menu", "hamburger"]
     },
     {
         "id": "minus-circle",
-        "path": "svg/minus-circle.svg",
-        "unicode": 57380,
-        "since": "v0.0.1"
+        "unicode": 57383,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["less", "minus", "circle"]
     },
     {
         "id": "minus",
-        "path": "svg/minus.svg",
-        "unicode": 57381,
-        "since": "v0.0.1"
+        "unicode": 57384,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["minus", "less"]
+    },
+    {
+        "id": "palette",
+        "unicode": 57385,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["palette", "color", "colour", "colors", "draw", "paint"]
     },
     {
         "id": "plus-circle",
-        "path": "svg/plus-circle.svg",
-        "unicode": 57382,
-        "since": "v0.0.1"
+        "unicode": 57386,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["plus", "add", "extra", "circle"]
     },
     {
         "id": "plus",
-        "path": "svg/plus.svg",
-        "unicode": 57383,
-        "since": "v0.0.1"
+        "unicode": 57387,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["plus", "add", "extra"]
     },
     {
         "id": "processing",
-        "path": "svg/processing.svg",
-        "unicode": 57384,
-        "since": "v0.0.1"
+        "unicode": 57388,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["process", "status", "working", "running"]
     },
     {
         "id": "question-circle",
-        "path": "svg/question-circle.svg",
-        "unicode": 57385,
-        "since": "v0.0.1"
+        "unicode": 57389,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["question", "mark", "circle"]
     },
     {
         "id": "question",
-        "path": "svg/question.svg",
-        "unicode": 57386,
-        "since": "v0.0.1"
+        "unicode": 57390,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["question", "mark"]
     },
     {
         "id": "redo",
-        "path": "svg/redo.svg",
-        "unicode": 57387,
-        "since": "v0.0.1"
+        "unicode": 57391,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["redo"]
     },
     {
         "id": "resize",
-        "path": "svg/resize.svg",
-        "unicode": 57388,
-        "since": "v0.0.1"
+        "unicode": 57392,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["resize"]
     },
     {
         "id": "search",
-        "path": "svg/search.svg",
-        "unicode": 57389,
-        "since": "v0.0.1"
+        "unicode": 57393,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["search", "find", "look", "glass", "loupe"]
     },
     {
         "id": "settings",
-        "path": "svg/settings.svg",
-        "unicode": 57390,
-        "since": "v0.0.1"
+        "unicode": 57394,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["settings", "configuration", "gear"]
     },
     {
         "id": "star",
-        "path": "svg/star.svg",
-        "unicode": 57391,
-        "since": "v0.0.1"
+        "unicode": 57395,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["star", "favourite"]
     },
     {
         "id": "time",
-        "path": "svg/time.svg",
-        "unicode": 57392,
-        "since": "v0.0.1"
+        "unicode": 57396,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["time", "clock", "tic", "hours", "minutes", "seconds"]
     },
     {
         "id": "trash",
-        "path": "svg/trash.svg",
-        "unicode": 57393,
-        "since": "v0.0.1"
+        "unicode": 57397,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["trash", "waste", "delete", "remove"]
     },
     {
         "id": "undo",
-        "path": "svg/undo.svg",
-        "unicode": 57394,
-        "since": "v0.0.1"
+        "unicode": 57398,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["undo", "back", "go-back"]
     },
     {
         "id": "unlock",
-        "path": "svg/unlock.svg",
-        "unicode": 57395,
-        "since": "v0.0.1"
+        "unicode": 57399,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["lock", "unclock", "security", "open"]
     },
     {
         "id": "user-add",
-        "path": "svg/user-add.svg",
-        "unicode": 57396,
-        "since": "v0.0.1"
+        "unicode": 57400,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["user", "add", "new", "create"]
     },
     {
         "id": "user-delete",
-        "path": "svg/user-delete.svg",
-        "unicode": 57397,
-        "since": "v0.0.1"
+        "unicode": 57401,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["user", "remove", "delete"]
     },
     {
         "id": "user",
-        "path": "svg/user.svg",
-        "unicode": 57398,
-        "since": "v0.0.1"
+        "unicode": 57402,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["user", "person"]
     },
     {
         "id": "volume-down",
-        "path": "svg/volume-down.svg",
-        "unicode": 57399,
-        "since": "v0.0.1"
+        "unicode": 57403,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["volume", "sound", "music"]
     },
     {
         "id": "volume-mute",
-        "path": "svg/volume-mute.svg",
-        "unicode": 57400,
-        "since": "v0.0.1"
+        "unicode": 57404,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["volume", "sound", "music", "silence"]
     },
     {
         "id": "volume-up",
-        "path": "svg/volume-up.svg",
-        "unicode": 57401,
-        "since": "v0.0.1"
+        "unicode": 57405,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["volume", "sound", "music"]
     },
     {
         "id": "zoom-in",
-        "path": "svg/zoom-in.svg",
-        "unicode": 57402,
-        "since": "v0.0.1"
+        "unicode": 57406,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["zoom", "in"]
     },
     {
         "id": "zoom-out",
-        "path": "svg/zoom-out.svg",
-        "unicode": 57403,
-        "since": "v0.0.1"
+        "unicode": 57407,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["zoom", "out"]
+    },
+    {
+        "id": "bell",
+        "unicode": 57408,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["notification", "alert", "ring", "bell"]
     }
+
 ]
