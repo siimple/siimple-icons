@@ -1,4 +1,4 @@
-.PHONY: build templates docs
+.PHONY: build test docs
 
 # Node binaries path
 NODE_BIN=./node_modules/.bin
@@ -20,6 +20,8 @@ lint:
 # Build the fonts and the css files
 build: 
 	@logger -s "Build started"
+	@logger -s "Compiling SCSS templates"
+	node ./scripts/templates.js --source scss
 	@logger -s "Compiling CSS files"
 	mkdir -p ${OUTPUT_FONTS}
 	${NODE_BIN}/sass scss/siimple-icons.scss ${OUTPUT_CSS} 
@@ -43,9 +45,8 @@ build:
 	${NODE_BIN}/woff2_compress.js ${OUTPUT_FONTS_TTF} ${OUTPUT_FONTS_WOFF2}
 	@logger -s "Build finished"
 
-# Compile the templates
-templates: 
-	node ./scripts/templates.js --source scss
+# Build tests
+test: 
 	node ./scripts/templates.js --source test
 
 # Build docs
