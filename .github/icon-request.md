@@ -1,7 +1,7 @@
 ---
 name: Icon request
 about: Suggest a new icon
---
+---
 
 **Icon description**
 Please provide a brief description of the icon.
