@@ -13,7 +13,7 @@ You must read and follow the [code of conduct](./CODE_OF_CONDUCT.md) of **siimpl
 We only accept issues that are icons requests, bug reports or questions. Use the following issues templates to submit your issue:
 
 - [Request a new icon](https://github.com/siimple/siimple-icons/issues/new?template=icon-request.md).
- 
+- [Report a bug](https://github.com/siimple/siimple-icons/issues/new?template=bug_report.md). 
 
 ## Questions or problems
 
