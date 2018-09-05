@@ -453,6 +453,76 @@
         "added": "v0.0.1",
         "updated": "v0.0.1",
         "keywords": ["notification", "alert", "ring", "bell"]
+    },
+    {
+        "id": "bell-exclamation",
+        "unicode": 57409,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["notification", "alert", "ring", "bell", "exclamation", "warning", "important"]
+    },
+    {
+        "id": "folder-open",
+        "unicode": 57410,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["folder", "directory", "open"]
+    },
+    {
+        "id": "copy",
+        "unicode": 57411,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["copy", "files"]
+    },
+    {
+        "id": "paste",
+        "unicode": 57412,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["paste", "files", "clipboard"]
+    },
+    {
+        "id": "clipboard",
+        "unicode": 57413,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["clipboard", "paste"]
+    },
+    {
+        "id": "cut",
+        "unicode": 57414,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["cut", "scissors", "edit"]
+    },
+    {
+        "id": "pen",
+        "unicode": 57415,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["pen", "edit"]
+    },
+    {
+        "id": "archive",
+        "unicode": 57416,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["archive", "files", "container"]
+    },
+    {
+        "id": "book",
+        "unicode": 57417,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["book", "cover", "pages", "content"]
+    },
+    {
+        "id": "layers",
+        "unicode": 57418,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["layers"]
     }
-
 ]
+
