@@ -523,6 +523,27 @@
         "added": "v0.0.1",
         "updated": "v0.0.1",
         "keywords": ["layers"]
+    },
+    {
+        "id": "layer-add",
+        "unicode": 57419,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["layers", "layer", "add", "new"]
+    },
+    {
+        "id": "layer-delete",
+        "unicode": 57420,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["layers", "layer", "delete", "remove"]
+    },
+    {
+        "id": "message",
+        "unicode": 57421,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["message", "sms", "email", "mail", "inbox", "correspondence", "post"]
     }
 ]
 
