@@ -544,6 +544,13 @@
         "added": "v0.0.1",
         "updated": "v0.0.1",
         "keywords": ["message", "sms", "email", "mail", "inbox", "correspondence", "post"]
+    },
+    {
+        "id": "save",
+        "unicode": 57422,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["save", "disk"]
     }
 ]
 
