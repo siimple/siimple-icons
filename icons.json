@@ -586,6 +586,13 @@
         "added": "v0.0.1",
         "updated": "v0.0.1",
         "keywords": ["map", "location"]
+    },
+    {
+        "id": "bookmark",
+        "unicode": 57428,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["bookmark", "mark", "book"]
     }
 ]
 
