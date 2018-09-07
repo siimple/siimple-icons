@@ -579,6 +579,13 @@
         "added": "v0.0.1",
         "updated": "v0.0.1",
         "keywords": ["tag"]
+    },
+    {
+        "id": "map",
+        "unicode": 57426,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["map", "location"]
     }
 ]
 
