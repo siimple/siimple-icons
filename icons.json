@@ -656,6 +656,20 @@
         "added": "v0.0.1",
         "updated": "v0.0.1",
         "keywords": ["puzzle", "piece"]
+    },
+    {
+        "id": "bold",
+        "unicode": 57438,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["bold", "text", "content", "strong"]
+    },
+    {
+        "id": "italic",
+        "unicode": 57439,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["italic", "oblique", "text", "content"]
     }
 ]
 
