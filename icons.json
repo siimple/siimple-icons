@@ -558,6 +558,27 @@
         "added": "v0.0.1",
         "updated": "v0.0.1",
         "keywords": ["rocket", "space", "spaceship", "stars"]
+    },
+    {
+        "id": "shield",
+        "unicode": 57424,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["shield", "security"]
+    },
+    {
+        "id": "shield-check",
+        "unicode": 57425,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["shield", "security", "checked"]
+    },
+    {
+        "id": "tag",
+        "unicode": 57426,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["tag"]
     }
 ]
 
