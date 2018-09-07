@@ -614,6 +614,34 @@
         "added": "v0.0.1",
         "updated": "v0.0.1",
         "keywords": ["presentation", "slides", "class"]
+    },
+    {
+        "id": "align-center",
+        "unicode": 57432,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["align", "text", "centering", "content"]
+    },
+    {
+        "id": "align-left",
+        "unicode": 57433,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["align", "text", "left", "content"]
+    },
+    {
+        "id": "align-right",
+        "unicode": 57434,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["align", "text", "right", "content"]
+    },
+    {
+        "id": "align-justify",
+        "unicode": 57435,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["align", "text", "right", "content"]
     }
 ]
 
