@@ -600,6 +600,13 @@
         "added": "v0.0.1",
         "updated": "v0.0.1",
         "keywords": ["image", "img", "picture", "photography"]
+    },
+    {
+        "id": "grid",
+        "unicode": 57430,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["grid", "menu", "apps", "list"]
     }
 ]
 
