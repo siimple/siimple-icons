@@ -593,6 +593,13 @@
         "added": "v0.0.1",
         "updated": "v0.0.1",
         "keywords": ["bookmark", "mark", "book"]
+    },
+    {
+        "id": "image",
+        "unicode": 57429,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["image", "img", "picture", "photography"]
     }
 ]
 
