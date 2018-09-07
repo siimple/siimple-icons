@@ -582,7 +582,7 @@
     },
     {
         "id": "map",
-        "unicode": 57426,
+        "unicode": 57427,
         "added": "v0.0.1",
         "updated": "v0.0.1",
         "keywords": ["map", "location"]
