@@ -642,6 +642,13 @@
         "added": "v0.0.1",
         "updated": "v0.0.1",
         "keywords": ["align", "text", "right", "content"]
+    },
+    {
+        "id": "comments",
+        "unicode": 57436,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["comments", "chat", "comment", "message"]
     }
 ]
 
