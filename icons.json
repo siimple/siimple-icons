@@ -670,6 +670,13 @@
         "added": "v0.0.1",
         "updated": "v0.0.1",
         "keywords": ["italic", "oblique", "text", "content"]
+    },
+    {
+        "id": "underline",
+        "unicode": 57440,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["underline", "text", "content"]
     }
 ]
 
