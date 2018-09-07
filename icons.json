@@ -607,6 +607,13 @@
         "added": "v0.0.1",
         "updated": "v0.0.1",
         "keywords": ["grid", "menu", "apps", "list"]
+    },
+    {
+        "id": "presentation",
+        "unicode": 57431,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["presentation", "slides", "class"]
     }
 ]
 
