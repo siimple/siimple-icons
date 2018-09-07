@@ -551,6 +551,13 @@
         "added": "v0.0.1",
         "updated": "v0.0.1",
         "keywords": ["save", "disk"]
+    },
+    {
+        "id": "rocket",
+        "unicode": 57423,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["rocket", "space", "spaceship", "stars"]
     }
 ]
 
