@@ -245,7 +245,7 @@
         "keywords": ["lightbulb", "light", "bulb", "illumination"]
     },
     {
-        "id": "list",
+        "id": "list-ul",
         "unicode": 57379,
         "added": "v0.0.1",
         "updated": "v0.0.1",
