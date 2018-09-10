@@ -677,6 +677,13 @@
         "added": "v0.0.1",
         "updated": "v0.0.1",
         "keywords": ["underline", "text", "content"]
+    },
+    {
+        "id": "erase",
+        "unicode": 57441,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["erase", "delete", "rubber"]
     }
 ]
 
