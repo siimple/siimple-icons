@@ -684,6 +684,13 @@
         "added": "v0.0.1",
         "updated": "v0.0.1",
         "keywords": ["erase", "delete", "rubber"]
+    },
+    {
+        "id": "link",
+        "unicode": 57442,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["link", "anchor"]
     }
 ]
 
