@@ -24,7 +24,7 @@ build:
 	node ./scripts/templates.js --source scss
 	@logger -s "Compiling CSS files"
 	mkdir -p ${OUTPUT_FONTS}
-	${NODE_BIN}/sass scss/siimple-icons.scss ${OUTPUT_CSS} 
+	${NODE_BIN}/sass icons.scss ${OUTPUT_CSS} 
 	node ./scripts/header.js > ./dist/header.txt
 	cat ./dist/header.txt ${OUTPUT_CSS} > ${OUTPUT_CSS}.temp
 	rm ./dist/header.txt
@@ -53,7 +53,7 @@ test:
 docs: 
 	@logger -s "Docs build started"
 	@logger -s "Building documentation site with Jekyll"
-	cd ./docs && jekyll build
+	cd ./docs && bundle exec jekyll build
 	@logger -s "Copying assets files"
 	mkdir -p ./docs/_site/assets/js
 	cp ./node_modules/react/umd/react.production.min.js ./docs/_site/assets/js/
@@ -68,4 +68,8 @@ docs:
 docs-serve:
 	${NODE_BIN}/stattic --folder ./docs/_site/ --port 5000 --cors
 
+# Publish docs
+docs-publish:
+	@logger -s "Docs publis started"
+	make docs	
 
