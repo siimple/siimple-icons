@@ -691,6 +691,13 @@
         "added": "v0.0.1",
         "updated": "v0.0.1",
         "keywords": ["link", "anchor"]
+    },
+    {
+        "id": "shield-cross",
+        "unicode": 57443,
+        "added": "v0.0.1",
+        "updated": "v0.0.1",
+        "keywords": ["shield", "security", "error", "danger"]
     }
 ]
 
