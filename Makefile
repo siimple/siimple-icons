@@ -24,7 +24,7 @@ build:
 	node ./scripts/templates.js --source scss
 	@logger -s "Compiling CSS files"
 	mkdir -p ${OUTPUT_FONTS}
-	${NODE_BIN}/sass icons.scss ${OUTPUT_CSS} 
+	${NODE_BIN}/sass index.scss ${OUTPUT_CSS} 
 	node ./scripts/header.js > ./dist/header.txt
 	cat ./dist/header.txt ${OUTPUT_CSS} > ${OUTPUT_CSS}.temp
 	rm ./dist/header.txt
