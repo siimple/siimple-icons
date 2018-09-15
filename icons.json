@@ -77,11 +77,11 @@
         "keywords": ["tasks", "list", "todo"]
     },
     {
-        "id": "chevron-circle-right",
+        "id": "list-ol",
         "unicode": 57355,
         "added": "v0.0.1",
         "updated": "v0.0.1",
-        "keywords": ["arrow", "circle", "chevron", "right"]
+        "keywords": ["list", "order", "ordered"]
     },
     {
         "id": "chevron-circle-up",
