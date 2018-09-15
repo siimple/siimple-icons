@@ -63,18 +63,18 @@
         "keywords": ["check", "mark", "done", "accept"]
     },
     {
-        "id": "chevron-circle-down",
+        "id": "quote",
         "unicode": 57353,
         "added": "v0.0.1",
         "updated": "v0.0.1",
-        "keywords": ["arrow", "circle", "chevron", "down"]
+        "keywords": ["quote", "cite"]
     },
     {
-        "id": "chevron-circle-left",
+        "id": "tasks",
         "unicode": 57354,
         "added": "v0.0.1",
         "updated": "v0.0.1",
-        "keywords": ["arrow", "circle", "chevron", "left"]
+        "keywords": ["tasks", "list", "todo"]
     },
     {
         "id": "chevron-circle-right",
