@@ -455,11 +455,11 @@
         "keywords": ["notification", "alert", "ring", "bell"]
     },
     {
-        "id": "bell-exclamation",
+        "id": "attachment",
         "unicode": 57409,
         "added": "v0.0.1",
         "updated": "v0.0.1",
-        "keywords": ["notification", "alert", "ring", "bell", "exclamation", "warning", "important"]
+        "keywords": ["attachment", "attach", "file", "clip"]
     },
     {
         "id": "folder-open",
