@@ -84,11 +84,11 @@
         "keywords": ["list", "order", "ordered"]
     },
     {
-        "id": "chevron-circle-up",
+        "id": "table",
         "unicode": 57356,
         "added": "v0.0.1",
         "updated": "v0.0.1",
-        "keywords": ["arrow", "chevron", "up", "circle"]
+        "keywords": ["table", "tbody", "thead", "rows", "columns"]
     },
     {
         "id": "chevron-down",
