@@ -144,7 +144,7 @@
         "unicode": 57364,
         "added": "v0.0.1",
         "updated": "v0.0.1",
-        "keywords": ["chart", "bars"]
+        "keywords": ["chart", "bars", "data"]
     },
     {
         "id": "cross",
@@ -161,11 +161,11 @@
         "keywords": ["edit", "write", "pen", "pencil"]
     },
     {
-        "id": "exclamation-circle",
+        "id": "chart-line",
         "unicode": 57367,
         "added": "v0.0.1",
         "updated": "v0.0.1",
-        "keywords": ["exclamation", "mark", "circle", "notice", "circle"]
+        "keywords": ["chart", "line", "data"]
     },
     {
         "id": "exclamation",
