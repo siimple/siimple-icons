@@ -49,11 +49,11 @@
         "keywords": ["box", "paper", "container"]
     },
     {
-        "id": "check-circle",
+        "id": "calendar",
         "unicode": 57351,
         "added": "v0.0.1",
         "updated": "v0.0.1",
-        "keywords": ["check", "mark", "done", "accept", "circle"]
+        "keywords": ["calendar", "days", "week", "month", "year", "time"]
     },
     {
         "id": "check",
@@ -140,11 +140,11 @@
         "keywords": ["cloud", "server"]
     },
     {
-        "id": "cross-circle",
+        "id": "chart-bar",
         "unicode": 57364,
         "added": "v0.0.1",
         "updated": "v0.0.1",
-        "keywords": ["cross", "delete", "exit", "cancel", "close", "circle"]
+        "keywords": ["chart", "bars"]
     },
     {
         "id": "cross",
