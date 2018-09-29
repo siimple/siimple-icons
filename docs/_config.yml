@@ -1,0 +1,35 @@
+## Site settings
+##############################################
+title: "siimple-icons"
+version: "0.0.0"
+url: "https://icons.siimple.xyz/"
+## License configuration
+license:
+    title: "MIT License"
+    url: "https://github.com/siimple/siimple-icons/blob/develop/LICENSE"
+## Repository configuration
+repository:
+    url: "https://github.com/siimple/siimple"
+    issues: "https://github.com/siimple/siimple/issues"
+    contributors: "https://github.com/siimple/siimple/graphs/contributors"
+## Navbar links
+links:
+    - title: "Icons"
+      url: "/icons.html"
+## Cookies settings
+#cookies:
+#    analytics: "UA-70800807-5"
+#    path: "/"
+#    domain: ".siimple.xyz"
+
+## Build settings
+##############################################
+env: "production"
+permalink: "none" 
+# Sass build settings
+sass:
+    style: "compressed"
+    load_paths: ["../bower_components"]
+# Exclude files
+exclude: ["LICENSE"]
+
