@@ -2,6 +2,7 @@
 ##############################################
 title: "siimple-icons"
 version: "0.0.0"
+color: "green"
 url: "https://icons.siimple.xyz/"
 ## License configuration
 license:
@@ -26,6 +27,7 @@ links:
 ##############################################
 env: "production"
 permalink: "none" 
+theme: "siimple-theme"
 # Sass build settings
 sass:
     style: "compressed"
