@@ -40,4 +40,5 @@ bower_components
 # Cache files and folders
 *.iml
 *.swp
+.sass-cache
 
