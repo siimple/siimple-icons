@@ -224,11 +224,11 @@
         "keywords": ["home", "house", "building"]
     },
     {
-        "id": "info-circle",
+        "id": "briefcase",
         "unicode": 57376,
         "added": "v0.0.1",
         "updated": "v0.0.1",
-        "keywords": ["info", "circle"]
+        "keywords": ["briefcase", "executive", "case", "bag", "documents", "business"]
     },
     {
         "id": "info",
@@ -315,11 +315,11 @@
         "keywords": ["process", "status", "working", "running"]
     },
     {
-        "id": "question-circle",
+        "id": "cart",
         "unicode": 57389,
         "added": "v0.0.1",
         "updated": "v0.0.1",
-        "keywords": ["question", "mark", "circle"]
+        "keywords": ["cart", "shop", "shopping", "market", "buy"]
     },
     {
         "id": "question",
