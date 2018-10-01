@@ -273,11 +273,11 @@
         "keywords": ["menu", "hamburger"]
     },
     {
-        "id": "minus-circle",
+        "id": "trophy",
         "unicode": 57383,
         "added": "v0.0.1",
         "updated": "v0.0.1",
-        "keywords": ["less", "minus", "circle"]
+        "keywords": ["trophy", "price", "cup", "winner"]
     },
     {
         "id": "minus",
