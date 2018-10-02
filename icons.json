@@ -294,11 +294,11 @@
         "keywords": ["palette", "color", "colour", "colors", "draw", "paint"]
     },
     {
-        "id": "plus-circle",
+        "id": "brush",
         "unicode": 57386,
         "added": "v0.0.1",
         "updated": "v0.0.1",
-        "keywords": ["plus", "add", "extra", "circle"]
+        "keywords": ["prush", "paint", "painting"]
     },
     {
         "id": "plus",
