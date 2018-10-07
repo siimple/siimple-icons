@@ -10,11 +10,13 @@ license:
     url: "https://github.com/siimple/siimple-icons/blob/develop/LICENSE"
 ## Repository configuration
 repository:
-    url: "https://github.com/siimple/siimple"
-    issues: "https://github.com/siimple/siimple/issues"
-    contributors: "https://github.com/siimple/siimple/graphs/contributors"
+    url: "https://github.com/siimple/siimple-icons"
+    issues: "https://github.com/siimple/siimple-icons/issues"
+    contributors: "https://github.com/siimple/siimple-icons/graphs/contributors"
 ## Navbar links
 links:
+    - title: "Usage"
+      url: "/usage.html"
     - title: "Icons"
       url: "/icons.html"
 ## Cookies settings
