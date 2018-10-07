@@ -51,18 +51,15 @@ test:
 
 # Build docs
 docs: 
-	@logger -s "Docs build started"
-	@logger -s "Building documentation site with Jekyll"
 	cd ./docs && bundle exec jekyll build
-	@logger -s "Copying assets files"
 	mkdir -p ./docs/_site/assets/js
 	cp ./node_modules/react/umd/react.production.min.js ./docs/_site/assets/js/
 	cp ./node_modules/react-dom/umd/react-dom.production.min.js ./docs/_site/assets/js/
 	cp ./bower_components/siimple/dist/siimple.min.css ./docs/_site/assets/css/
+	cp ./bower_components/siimple-colors/dist/siimple-colors.min.css ./docs/_site/assets/css/
 	cp ./dist/siimple-icons.min.css ./docs/_site/assets/css/
 	cp -R ./dist/fonts ./docs/_site/assets/css/
 	cp ./icons.json ./docs/_site/assets/
-	@logger -s "Docs build finished"
 
 # Serve documentation
 docs-serve:
@@ -70,6 +67,5 @@ docs-serve:
 
 # Publish docs
 docs-publish:
-	@logger -s "Docs publis started"
 	make docs	
 
