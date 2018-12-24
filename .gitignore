@@ -41,4 +41,6 @@ bower_components
 *.iml
 *.swp
 .sass-cache
+docs/_site
+Gemfile.lock
 
