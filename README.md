@@ -107,28 +107,19 @@ You can also style your icon adding a class to the parent `<svg>` tag with your 
 
 ## Build instructions
 
-First, you must navigate to the **siimple-icons** folder and install all dependencies using **npm**:
+We use [Make](https://www.tutorialspoint.com/unix_commands/make.htm) to automatize the building of **siimple-icons**. Install all dependencies running the following command:
 
 ```
-npm install
+$ make install
 ```
 
-Be sure that you have [gulp](https://github.com/gulpjs/gulp) installed globally. If not, you can install it running: 
+Be sure that you have [npm](https://npmjs.com) installed in your computer. 
+
+You only need to run the following command to generate all the styles and fonts for **siimple-icons**:
 
 ```
-npm install -g gulp
+$ make build
 ```
- 
-### Build the sprite
-
-You can generate the sprite with all the images running the following command:
-
-```
-gulp sprite
-```
-
-This will generate a file called `siimple-icons.svg` on the `dist` folder.
-
 
 
 ## License 
