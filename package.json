@@ -26,16 +26,5 @@
         "svg2ttf": "^4.1.0",
         "ttf2woff": "^2.0.1",
         "wawoff2": "^1.0.2"
-    },
-    "scripts": {
-        "build": "node ./scripts/build.js",
-        "docs": "npm run docs:build && npm run docs:serve",
-        "docs:build": "node ./scripts/docs.js",
-        "docs:deploy": "",
-        "docs:serve": "node ./node_modules/stattic/cli.js --folder ./docs/dist --port 5000 --cors",
-        "templates": "node ./scripts/templates.js",
-        "templates:scss": "node ./scripts/templates.js --flow-tasks generate:scss",
-        "templates:test": "node ./scripts/templates.js --flow-tasks generate:test",
-        "test": "node ./node_modules/stattic/cli.js --folder ./ --port 5000 --cors"
     }
 }
