@@ -13,6 +13,10 @@ OUTPUT_FONTS_TTF=${OUTPUT_FONTS}/siimple-icons.font.ttf
 OUTPUT_FONTS_WOFF=${OUTPUT_FONTS}/siimple-icons.font.woff
 OUTPUT_FONTS_WOFF2=${OUTPUT_FONTS}/siimple-icons.font.woff2
 
+# Install dependencies
+install:
+	npm install
+
 # Run sass lint
 lint: 
 	${NODE_BIN}/sass-lint -v
