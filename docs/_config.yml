@@ -2,38 +2,30 @@
 ##############################################
 title: "siimple-icons"
 version: "0.0.0"
-color: "green"
 url: "https://icons.siimple.xyz/"
-## License configuration
-license:
-    title: "MIT License"
-    url: "https://github.com/siimple/siimple-icons/blob/develop/LICENSE"
-## Repository configuration
-repository:
-    url: "https://github.com/siimple/siimple-icons"
-    issues: "https://github.com/siimple/siimple-icons/issues"
-    contributors: "https://github.com/siimple/siimple-icons/graphs/contributors"
-## Navbar links
+author: "Josemi Juanes, Pablo Marin and David Gomez"
+license: "MIT License"
+repository: "https://github.com/siimple/siimple-icons"
 links:
     - title: "Usage"
       url: "/usage.html"
     - title: "Icons"
       url: "/icons.html"
-## Cookies settings
-#cookies:
-#    analytics: "UA-70800807-5"
-#    path: "/"
-#    domain: ".siimple.xyz"
+## Theme configuration
+theme_config:
+    color: "blue"
+    custom_styles: ["/assets/css/main.css"]
+    changes_url: "https://github.com/siimple/siimple-icons/issues/new"
+    analytics: "UA-70800807-5"
+    legal_urls:
+        cookies: "https://www.siimple.xyz/legal/cookies.html"
+        privacy: "https://www.siimple.xyz/legal/privacy.html"
+    copyright: "&copy; 2015-present <strong>siimple</strong>"
 
 ## Build settings
 ##############################################
 env: "production"
 permalink: "none" 
 theme: "siimple-theme"
-# Sass build settings
-sass:
-    style: "compressed"
-    load_paths: ["../bower_components"]
-# Exclude files
-exclude: ["LICENSE"]
+exclude: ["LICENSE","Gemfile","Gemfile.lock"]
 
