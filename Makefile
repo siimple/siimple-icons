@@ -52,7 +52,8 @@ test:
 # Build docs
 docs: 
 	cd ./docs && bundle exec jekyll build
-	mkdir -p ./docs/_site/assets/js
+	mkdir -p ./docs/_site/assets/js ./docs/_site/assets/css
+	${NODE_BIN}/sass ./docs/_sass/main.scss ./docs/_site/assets/css/main.css --load-path=./bower_components/
 	cp ./node_modules/react/umd/react.production.min.js ./docs/_site/assets/js/
 	cp ./node_modules/react-dom/umd/react-dom.production.min.js ./docs/_site/assets/js/
 	cp ./bower_components/siimple/dist/siimple.min.css ./docs/_site/assets/css/
