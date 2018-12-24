@@ -13,7 +13,7 @@ links:
       url: "/icons.html"
 ## Theme configuration
 theme_config:
-    color: "blue"
+    color: "green"
     custom_styles: ["/assets/css/main.css"]
     changes_url: "https://github.com/siimple/siimple-icons/issues/new"
     analytics: "UA-70800807-5"
