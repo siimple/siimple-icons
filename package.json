@@ -1,10 +1,10 @@
 {
     "name": "siimple-icons",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "A suite of scalable icons for web, desktop and mobile projects",
     "author": "Josemi Juanes <josemijuanes@gmail.com>",
     "license": "MIT",
-    "homepage": "https://plugins.siimple.xyz/icons",
+    "homepage": "https://icons.siimple.xyz",
     "repository": "https://github.com/siimple/siimple-icons",
     "bugs": "https://github.com/siimple/siimple-icons/issues",
     "dependencies": {},
@@ -28,3 +28,4 @@
         "wawoff2": "^1.0.2"
     }
 }
+
